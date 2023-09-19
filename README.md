@@ -1,6 +1,6 @@
 # Lập trình web cơ bản
 
-# **Đề tài: Xây dựng trang web Media chụp ảnh sự kiện và chụp cá nhân**
+# **Đề tài: Xây dựng trang web **
 
 ## Giới thiệu thành viên:/
 
