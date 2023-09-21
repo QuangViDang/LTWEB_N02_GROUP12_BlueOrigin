@@ -1,6 +1,6 @@
 # Lập trình web cơ bản
 
-# **Đề tài: Xây dựng trang web **
+# **Đề tài: Xây dựng website Sản phẩm thiết kế đồ họa**
 
 ## Giới thiệu thành viên:/
 
