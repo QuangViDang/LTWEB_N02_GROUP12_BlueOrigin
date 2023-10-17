@@ -29,12 +29,12 @@
                 <li>
                     <span class="sub-span">ABOUT</span>
                     <ul class="sub-nav">
-                        <li><a href="/aboutBlue.html">ABOUT BLUE</a></li>
-                        <li><a href="/new.html">NEWS</a></li>
-                        <li><a href="/gallery2.html">GALLERY</a></li>
+                        <li><a href="/About/aboutBlue.html">ABOUT BLUE</a></li>
+                        <li><a href="/New/new.html">NEWS</a></li>
+                        <li><a href="/Gallery/gallery2.html">GALLERY</a></li>
                     </ul>
                 </li>
-                <li class="menu"><a href="/Career.html">CAREERS</a></li>
+                <li><a href="/Career/Career.html">CAREERS</a></li>
                 <li class="menu"><a href="">SHOP</a></li>
             </ul>
         </nav>
@@ -49,8 +49,11 @@
                 <li><a href="" class="Eng">English</a></li>
                 <li><a href="">Español</a></li>
                 <li><a href="">Français</a></li>
-                <li><a href="">中文（简体</a></li>
+                <li><a href="">中文（简体)</a></li>
+                <li><a href="">中文 (繁體)</a></li>
                 <li><a href="">日本語</a></li>
+                <li><a href=""> Português</a></li>
+                <li><a href="">عربي</a></li>
             </ul>
         </div>
         <div class="fly" style="
@@ -71,10 +74,10 @@
                         <li><a href="">BLUE MOON</a></li>
                         <li><a href="">ENGINES</a></li>
                         <li><a href="">DESTINATIONS</a></li>
-                        <li><a href="/aboutBlue.html">ABOUT BLUE</a></li>
-                        <li><a href="/new.html">NEWS</a></li>
-                        <li><a href="/gallery2.html">GALLERY</a></li>
-                        <li><a href="/Career.html">CAREERS</a></li>
+                        <li><a href="/About/aboutBlue.html">ABOUT BLUE</a></li>
+                        <li><a href="/New/new.html">NEWS</a></li>
+                        <li><a href="/Gallery/gallery2.html">GALLERY</a></li>
+                        <li><a href="/Career/Career.html">CAREERS</a></li>
                         <li><a href="">SHOP</a></li>
                     </ul>
                     <hr class="keNgang">
@@ -91,8 +94,11 @@
                             <li><a href="" class="Eng">English</a></li>
                             <li><a href="">Español</a></li>
                             <li><a href="">Français</a></li>
-                            <li><a href="">中文（简体</a></li>
+                            <li><a href="">中文（简体)</a></li>
+                            <li><a href="">中文 (繁體)</a></li>
                             <li><a href="">日本語</a></li>
+                            <li><a href=""> Português</a></li>
+                            <li><a href="">عربي</a></li>
                         </ul>
                     </div>
                     <!-- </div> -->
@@ -120,6 +126,7 @@
             <button class="close"></button>
             <div class="ytb">
                 <iframe width="1150" height="675" src="https://www.youtube.com/embed/1YOL89kY8Og?si=pmujxYHJ15vxiREg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
             </div>
          </div>
     </div>
@@ -127,10 +134,6 @@
     <div class="between1">
          <div class="between1-text">
             <p class="between1-text-logo">OUR VISION</p>
-            <!-- <div class="between1-text-logo">
-                <div class="before"></div>
-                <span>OUR VISION</span>
-            </div> -->
             <h2 class="between1-text-title">For the Benefit of Earth</h2>
             <p class="between1-text-para">Blue Origin was founded with a vision of millions of people living and working in space for the benefit of Earth. Blue Origin envisions a time when people can tap into the limitless resources of space and enable the movement of damaging industries into space to preserve Earth, humanity’s blue origin. </p>
          </div>
@@ -156,19 +159,26 @@
             <h2 class="between3-text-title">Safety, Blue Origin's Top Mission</h2>
             <p class="between3-text-para">Blue Origin has been flight testing the New Shepard rocket and its redundant safety systems since 2012. The program has had 22 successful consecutive missions including three successful escape tests, showing the crew escape system can activate safely in any phase of flight.</p>
             <p class="between3-border">
-                <a href="" class="boder-p">
+                <a href="https://www.blueorigin.com/fr-FR/safety" class="boder-p">
                     <span>Learn About Safety</span>
                 </a>
             </p>
             <p class="between3-border">
-                <a href="" class="boder-p">
+                <a class="boder-p" id="ytb-2">
                     <span>Video: Safety, Blue Origin's Top Mission</span>
                 </a>
             </p>
          </div>
-         <div class="between3-img">
-            
-         </div>
+        <div class="youtube-2">
+            <div class="grey-box"></div>
+            <button class="close2"></button>
+            <div class="ytb">
+                <iframe width="1200" height="675" src="https://www.youtube.com/embed/ZKqpt4g5_yY?si=6KYDPNrgQfex4auD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="between3-img">
+        </div>
+
     </div>
     <!-- BETWEEN 4 -->
     <div class="between1">
@@ -233,7 +243,7 @@
             <h2 class="between7-text-title">Club for the Future</h2>
             <p class="between7-text-para">Founded by Blue Origin in 2019, Club for the Future is a foundation whose mission is to inspire future generations to pursue careers in STEM and to help invent the future of life in space. The Club and its collaborators are doing this through Postcards to Space, space-focused curriculum, and access to space on Blue Origin’s rockets.</p>
             <p class="between7-border">
-                <a href="" class="boder-p">
+                <a href="https://clubforfuture.org/" class="boder-p">
                     <span>Visit Club for the Future</span>
                 </a>
             </p>
@@ -358,6 +368,14 @@
         });
         $(".btn-ytb").click(function() {
             $(".youtube").show();
+        });
+    </script>
+    <script>
+        $(".close2").click(function() {
+            $(".youtube-2").hide();
+        });
+        $("#ytb-2").click(function() {
+            $(".youtube-2").show();
         });
     </script>
     <script src="changeFont.js"></script>
