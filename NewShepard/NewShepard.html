@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="mdl-js">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.blueorigin.com/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.blueorigin.com/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.blueorigin.com/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://www.blueorigin.com/img/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="https://www.blueorigin.com/img/favicon/favicon.ico">
+  <link rel="mask-icon" href="https://www.blueorigin.com/img/favicon/safari-pinned-tab.svg" color="#0033dd">
+  <meta name="msapplication-TileColor" content="#0033dd">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#0033dd">
+
+  <script async="" src="./files/embed.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>New Shepard | Blue Origin</title>
+</head>
+
+<body class="standard-page  " id="new-shepard" data-new-gr-c-s-check-loaded="14.1131.0" data-gr-ext-installed="">
+  <header class="header header--absolute" id="header" lang="en-US">
+    <a href="https://bluetwelve.onrender.com/" class="header__skip-link">Skip navigation</a>
+    <span class="header__logo-wrapper">
+      <a class="header__logo" href="https://bluetwelve.onrender.com/">
+        <img class="header__logo-image" src="./files/blueorigin_logo_tagline.svg"
+          alt="Blue Origin: For The Benefit of Earth">
+      </a>
+    </span>
+    <nav aria-label="Featured" class="header__navigation header__navigation--desktop_only">
+      <ul class="header__navigation-list">
+        <li>
+          <div class="header__dropdown-menu "
+            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+            @click.outside="clicked = hovered = false">
+            <button class="header__dropdown-menu-trigger" type="button" aria-current="true"
+              :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+              :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+              :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+              aria-controls="header__dropdown-menu-list-1" id="header__dropdown-menu-trigger-1">
+              Vehicles
+            </button>
+            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+              :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+              x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+              x-transition:leave-end="header__dropdown-menu-list--transitioning"
+              aria-labelledby="header__dropdown-menu-trigger-1" id="header__dropdown-menu-list-1"
+              style="display: none;">
+              <li>
+                <a class="header__dropdown-menu-list-item" href="./NewShepard.html"
+                  aria-current="page">
+                  New Shepard
+                </a>
+
+              </li>
+
+              <li>
+                <a class="header__dropdown-menu-list-item" href="../NewGlenn/NewGlenn.html">
+                  New Glenn
+                </a>
+
+              </li>
+
+              <li>
+                <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/blue-moon">
+                  Blue Moon
+                </a>
+
+              </li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+            Engines
+          </a>
+
+        </li>
+        <li>
+          <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+            Destinations
+          </a>
+
+        </li>
+
+        <li>
+          <div class="header__dropdown-menu "
+            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+            @click.outside="clicked = hovered = false">
+            <button class="header__dropdown-menu-trigger" type="button"
+              :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+              :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+              :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+              aria-controls="header__dropdown-menu-list-2" id="header__dropdown-menu-trigger-2">
+              About
+            </button>
+            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+              :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+              x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+              x-transition:leave-end="header__dropdown-menu-list--transitioning"
+              aria-labelledby="header__dropdown-menu-trigger-2" id="header__dropdown-menu-list-2"
+              style="display: none;">
+              <li>
+                <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/about-blue">
+                  About Blue
+                </a>
+
+              </li>
+
+              <li>
+                <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/news">
+                  News
+                </a>
+
+              </li>
+
+              <li>
+                <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/news/gallery">
+                  Gallery
+                </a>
+
+              </li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <a class="header__navigation-item" href="https://www.blueorigin.com/careers">
+            Careers
+          </a>
+
+        </li>
+        <li>
+          <a class="header__navigation-item" href="https://shop.blueorigin.com/">
+            Shop
+          </a>
+
+        </li>
+      </ul>
+    </nav>
+    <div class="header__dropdown-menu  header__dropdown-menu--desktop_only "
+      x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+      @focusout="if (!$el.contains($event.relatedTarget)) clicked = false" @click.outside="clicked = hovered = false">
+      <button class="header__dropdown-menu-trigger" type="button"
+        :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+        :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)" :id="$id(&#39;header__dropdown-menu-trigger&#39;)"
+        @click="clicked = !clicked" aria-expanded="false" aria-controls="header__dropdown-menu-list-3"
+        id="header__dropdown-menu-trigger-3">
+        <img class="header__translation-menu-trigger-icon" src="./files/language.svg" alt="Language">
+      </button>
+      <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+        :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list " x-show="clicked || hovered"
+        x-transition:enter-start="header__dropdown-menu-list--transitioning"
+        x-transition:leave-end="header__dropdown-menu-list--transitioning"
+        aria-labelledby="header__dropdown-menu-trigger-3" id="header__dropdown-menu-list-3" style="display: none;">
+        <li lang="en-US" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/new-shepard" aria-current="true">
+            English
+          </a>
+        </li>
+
+        <li lang="es-MX" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/sp/new-shepard/fly">
+            Español
+          </a>
+        </li>
+
+        <li lang="fr-FR" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/fr/new-shepard/fly">
+            Français
+          </a>
+        </li>
+
+        <li lang="zh-CN" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/zh/new-shepard/fly">
+            中文（简体)
+          </a>
+        </li>
+
+        <li lang="zh-HK" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/hk/new-shepard/fly">
+            中文 (繁體)
+          </a>
+        </li>
+
+        <li lang="en-JP" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ja/new-shepard/fly">
+            日本語
+          </a>
+        </li>
+
+        <li lang="pt-BR" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/pt/new-shepard/fly">
+            Português
+          </a>
+        </li>
+
+        <li lang="ar-EG" dir="rtl">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ar/new-shepard/fly">
+            عربي
+          </a>
+        </li>
+      </ul>
+    </div> <a class="btn btn-blue header__call-to-action  header__call-to-action--desktop_only "
+      href="https://www.blueorigin.com/new-shepard/reserve-a-seat">
+      Fly to Space
+    </a>
+
+    <div class="header__overlay" x-data="{
+        isOpen: false,
+        open() {
+            this.isOpen = true;
+            requestAnimationFrame(() =&gt; {
+                $focus.focus($refs[&#39;header__overlay-modal&#39;]);
+            });
+        },
+        close() {
+            this.isOpen = false;
+            $focus.focus($refs[&#39;header__overlay-trigger&#39;]);
+        },
+    }">
+      <button class="header__overlay-trigger" :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;"
+        type="button" id="header__overlay-trigger" x-ref="header__overlay-trigger" aria-controls="header__overlay-modal"
+        aria-haspopup="dialog" @click="open()">
+        <span class="visually-hidden">Main menu</span>
+      </button>
+
+      <div class="header__overlay-modal" aria-labelledby="header__overlay-trigger" role="dialog" aria-modal="true"
+        tabindex="-1" id="header__overlay-modal" x-ref="header__overlay-modal" x-show="isOpen"
+        x-transition:enter-start="header__overlay-modal--transitioning"
+        x-transition:leave-end="header__overlay-modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+        @keyup.escape.prevent="close()" style="display: none;">
+        <div class="header__overlay-modal-content" @click.outside="close()">
+          <div class="header__overlay-top">
+            <button class="header__overlay-trigger"
+              :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;" type="button"
+              aria-controls="header__overlay-modal" @click="close()">
+              <span class="visually-hidden">Close menu</span>
+            </button>
+          </div>
+          <div class="header__overlay-modal-container">
+            <span class="header__logo-wrapper">
+              <a class="header__overlay-logo" href="https://www.blueorigin.com/">
+                <img class="header__overlay-logo-image" src="./files/logo-feather.svg" alt="Blue Origin">
+              </a>
+            </span>
+            <nav aria-label="Main" class="header__overlay-navigation header__overlay-navigation--primary">
+              <ul class="header__overlay-navigation-list">
+
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/new-shepard" aria-current="page">
+                    New Shepard
+                  </a>
+
+                </li>
+
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/new-glenn">
+                    New Glenn
+                  </a>
+
+                </li>
+
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/blue-moon">
+                    Blue Moon
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+                    Engines
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+                    Destinations
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/about-blue">
+                    About
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/news">
+                    News
+                  </a>
+
+                </li>
+
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/news/gallery">
+                    Gallery
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/careers">
+                    Careers
+                  </a>
+
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://shop.blueorigin.com/" target="_blank" rel="noopener">
+                    Shop
+                  </a>
+
+                </li>
+              </ul>
+            </nav>
+
+            <hr class="header__overlay-rule"> <a class="btn btn-blue header__call-to-action "
+              href="https://www.blueorigin.com/new-shepard/reserve-a-seat">
+              Fly to Space
+            </a>
+
+            <div class="header__dropdown-menu "
+              x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+              @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+              @click.outside="clicked = hovered = false">
+              <button class="header__dropdown-menu-trigger" type="button"
+                :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+                aria-controls="header__dropdown-menu-list-4" id="header__dropdown-menu-trigger-4">
+                <img class="header__translation-menu-trigger-icon" src="./files/language.svg" alt="Language">
+              </button>
+              <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                aria-labelledby="header__dropdown-menu-trigger-4" id="header__dropdown-menu-list-4"
+                style="display: none;">
+                <li lang="en-US" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/new-shepard"
+                    aria-current="true">
+                    English
+                  </a>
+                </li>
+
+                <li lang="es-MX" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/sp/new-shepard/fly">
+                    Español
+                  </a>
+                </li>
+
+                <li lang="fr-FR" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/fr/new-shepard/fly">
+                    Français
+                  </a>
+                </li>
+
+                <li lang="zh-CN" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/zh/new-shepard/fly">
+                    中文（简体)
+                  </a>
+                </li>
+
+                <li lang="zh-HK" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/hk/new-shepard/fly">
+                    中文 (繁體)
+                  </a>
+                </li>
+
+                <li lang="en-JP" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ja/new-shepard/fly">
+                    日本語
+                  </a>
+                </li>
+
+                <li lang="pt-BR" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/pt/new-shepard/fly">
+                    Português
+                  </a>
+                </li>
+
+                <li lang="ar-EG" dir="rtl">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ar/new-shepard/fly">
+                    عربي
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="standard-page-components">
+      <div class="hero-wrapper    hero-wrapper--white-focus ">
+        <section class="component hero full-height hero--background-fit-cover padding-full scrolled" x-data="{
+                isPlaying: false,
+                play() {
+                    this.isPlaying = true;
+                    $refs[&#39;background-video&#39;].play();
+                },
+                pause() {
+                    this.isPlaying = false;
+                    $refs[&#39;background-video&#39;].pause();
+                },
+            }" x-init="if (matchMedia(&#39;(prefers-reduced-motion: no-preference)&#39;).matches) play()">
+          <div class="background-video-image fade-in">
+
+            <video x-ref="background-video"
+              src="https://d3ezn0y6hdgq62.cloudfront.net/assets/blueorigin_newshepard_flightexperience_bgloop.mp4"
+              muted="true" loop="true" playsinline="true"
+              poster="https://d3ezn0y6hdgq62.cloudfront.net/assets/blueorigin_ns_experience_loop_static.jpg"
+              __idm_id__="4259841"></video>
+            <div class="hero__animation-controls">
+              <div class="hero__animation-controls-inner">
+                <button class="hero__animation-pause-button hero__animation-pause-button--pause"
+                  :class="isPlaying ? &#39;hero__animation-pause-button--pause&#39; : &#39;&#39;"
+                  @click="isPlaying ? pause() : play()">
+                  <span class="visually-hidden" x-text="isPlaying ? &#39;Pause video&#39; : &#39;Play video&#39;">Pause
+                    video</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="hero-content-wrapper">
+            <div class="text-start  container ">
+
+              <div class=" col-12 col-md-6    justify-content-start  ">
+
+                <div class="hero-content  ">
+                  <div>
+                    <hgroup>
+                      <p class="kicker animate animated">Suborbital Spaceflight</p>
+
+                      <h1 class="h1 heroic-font animate text-start wht-txt animated">
+
+                        New Shepard
+                      </h1>
+                    </hgroup>
+                    <div class="hero-content__main">
+
+                      <div class="col-12 hero-copy animate animated">
+                        <p>Our reusable launch vehicle is taking payloads - and soon you - to space.</p>
+                      </div>
+                      <div class="hero-buttons horizontal-btns animate justify-content-start animated">
+
+                        <div class="video-btn-wrapper">
+
+                          <div class="modal__wrapper " x-id="[&#39;modal&#39;, &#39;modal__trigger&#39;]" x-data="{
+        isOpen: false,
+        open() {
+            this.isOpen = true;
+            requestAnimationFrame(() =&gt; {
+                $focus.focus($refs[&#39;modal&#39;]);
+            });
+        },
+        close() {
+            this.isOpen = false;
+            $focus.focus($refs[&#39;modal__trigger&#39;]);
+        },
+    }">
+                            <button class="video-btn" type="button" x-ref="modal__trigger"
+                              :id="$id(&#39;modal__trigger&#39;)" :aria-controls="$id(&#39;modal&#39;)" @click="open()"
+                              id="modal__trigger-1" aria-controls="modal-1">
+
+                              <div>
+                                <span class="video-btn-play-bg"></span>
+                                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50" class="play-btn-svg"
+                                  role="img" x-id="[&#39;play-button-svg-title&#39;]"
+                                  :aria-labelledby="$id(&#39;play-button-svg-title&#39;)"
+                                  aria-labelledby="play-button-svg-title-1">
+                                  <use xlink:href="/img/icon-play.svg#icon"></use>
+                                  <title :id="$id(&#39;play-button-svg-title&#39;)" id="play-button-svg-title-1">Play
+                                    video</title>
+                                </svg>
+                              </div>
+                              <div>
+                                <span class="video-btn-text">Experience New Shepard</span>
+                              </div>
+                            </button>
+
+                            <div class="modal" x-show="isOpen" x-transition:enter-start="modal--transitioning"
+                              x-transition:leave-end="modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+                              @keyup.escape.prevent="close()" @click.outside="close()" @click.self="close()"
+                              x-ref="modal" :id="$id(&#39;modal&#39;)" :aria-labelledby="$id(&#39;modal__trigger&#39;)"
+                              role="dialog" aria-modal="true" tabindex="-1" id="modal-1"
+                              aria-labelledby="modal__trigger-1" style="display: none;">
+                              <button @click="close()" type="button" class="modal__close">
+                                <span class="visually-hidden">Close</span>
+                              </button>
+
+                              <div class="modal__content">
+                                <div class="embed-container">
+                                  <iframe
+                                    x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/fvky-qa8518?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
+                                    allowfullscreen="" allowtransparency=""
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    frameborder="0" tabindex="0" src="./files/saved_resource.html"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="hero-wrapper    hero-wrapper--white-focus ">
+        <section class="component hero  full-height hero--background-fit-cover padding-full  ">
+          <div class="background-video-image"> <img class="adj-img"
+              src="./files/blue-origin-first-human-flight-l0-wally-funk-astronaut-wings.jpg"
+              alt="Wally and Jeff face each other as Jeff affixes astronaut wings to Wally&#39;s flight suit. A Blue Origin employee looks on in the background holding a microphone."
+              style="object-position: 35% 34%">
+
+          </div>
+          <div class="hero-content-wrapper">
+            <div class="text-start  container ">
+
+              <div class=" col-12  justify-content-start  ">
+
+                <div class="hero-content  ">
+                  <div>
+
+                    <h2 class="h1 stars-font animate text-start wht-txt ">
+
+                      EXPERIENCE <b>NEW SHEPARD</b>
+                    </h2>
+                    <div class="hero-content__main">
+
+                      <div class=" col-12 hero-copy animate ">
+                        <p>Learn more about becoming an astronaut by flying on New Shepard.</p>
+                      </div>
+                      <div class="hero-buttons horizontal-btns animate justify-content-start">
+
+                        <div class="button-wrapper">
+
+                          <a href="https://www.blueorigin.com/new-shepard/fly" class="btn btn-animation btn-blue">
+                            <span>Learn More</span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="hero-wrapper    hero-wrapper--white-focus ">
+        <section class="component hero  auto-height hero--background-fit-cover padding-full  ">
+          <div class="background-video-image">
+            <picture>
+              <source srcset="https://d3ezn0y6hdgq62.cloudfront.net/NS22-L0-SabryEgress.jpg" media="(min-width: 991px)">
+              <source srcset="https://d3ezn0y6hdgq62.cloudfront.net/NS22-L0-SabryEgress_Mobile.jpg"
+                media="(min-width: 320px)">
+              <img src="./files/NS22-L0-SabryEgress_Mobile.jpg"
+                alt="An astronaut jubilantly departs the New Shepard crew capsule following a successful flight to space."
+                style="object-position: 50% 30%">
+            </picture>
+
+          </div>
+          <div class="hero-content-wrapper">
+            <div class="text-start  container ">
+
+              <div class=" col-12  justify-content-start  ">
+
+                <div class="hero-content  ">
+                  <div>
+                    <hgroup>
+                      <p class="kicker animate ">LATEST FLIGHT</p>
+
+                      <h2 class="h1 barlow-font animate text-start wht-txt ">
+
+                        <b>NS-22</b>
+                      </h2>
+                    </hgroup>
+                    <div class="hero-content__main">
+                      <div class="hero-buttons horizontal-btns animate justify-content-start">
+
+                        <div class="video-btn-wrapper">
+
+                          <div class="modal__wrapper " x-id="[&#39;modal&#39;, &#39;modal__trigger&#39;]" x-data="{
+        isOpen: false,
+        open() {
+            this.isOpen = true;
+            requestAnimationFrame(() =&gt; {
+                $focus.focus($refs[&#39;modal&#39;]);
+            });
+        },
+        close() {
+            this.isOpen = false;
+            $focus.focus($refs[&#39;modal__trigger&#39;]);
+        },
+    }">
+                            <button class="video-btn" type="button" x-ref="modal__trigger"
+                              :id="$id(&#39;modal__trigger&#39;)" :aria-controls="$id(&#39;modal&#39;)" @click="open()"
+                              id="modal__trigger-2" aria-controls="modal-2">
+
+                              <div>
+                                <span class="video-btn-play-bg"></span>
+                                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50" class="play-btn-svg"
+                                  role="img" x-id="[&#39;play-button-svg-title&#39;]"
+                                  :aria-labelledby="$id(&#39;play-button-svg-title&#39;)"
+                                  aria-labelledby="play-button-svg-title-2">
+                                  <use xlink:href="/img/icon-play.svg#icon"></use>
+                                  <title :id="$id(&#39;play-button-svg-title&#39;)" id="play-button-svg-title-2">Play
+                                    video</title>
+                                </svg>
+                              </div>
+                              <div>
+                                <span class="video-btn-text">Watch the replay</span>
+                              </div>
+                            </button>
+
+                            <div class="modal" x-show="isOpen" x-transition:enter-start="modal--transitioning"
+                              x-transition:leave-end="modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+                              @keyup.escape.prevent="close()" @click.outside="close()" @click.self="close()"
+                              x-ref="modal" :id="$id(&#39;modal&#39;)" :aria-labelledby="$id(&#39;modal__trigger&#39;)"
+                              role="dialog" aria-modal="true" tabindex="-1" id="modal-2"
+                              aria-labelledby="modal__trigger-2" style="display: none;">
+                              <button @click="close()" type="button" class="modal__close">
+                                <span class="visually-hidden">Close</span>
+                              </button>
+
+                              <div class="modal__content">
+                                <div class="embed-container">
+                                  <iframe
+                                    x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/zb9mCpEWsyE?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
+                                    allowfullscreen="" allowtransparency=""
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    frameborder="0" tabindex="0" src="./files/saved_resource(1).html"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <section class="vessel">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12">
+              <section class="component full-width white-bg center-align padding-full">
+                <div class="container">
+                  <div class="row  justify-content-center ">
+                    <div class=" col-12 col-md-8 text-">
+                      <hgroup>
+                        <p class="kicker  kicker--no-color-bar ">SUBORBITAL SPACEFLIGHT</p>
+                        <h2 class="h2">
+                          Meet New Shepard
+                        </h2>
+                      </hgroup>
+                      <div class="body-copy">
+                        <p>Named after Mercury astronaut Alan Shepard, the first American to go to space, New Shepard is
+                          our reusable suborbital rocket system designed to take astronauts and research payloads past
+                          the Kármán line – the internationally recognized boundary of space. Whether you are an
+                          astronaut flying with Blue Origin or sending a payload to space, your 11-minute flight on New
+                          Shepard will be the experience of a lifetime.</p>
+                      </div>
+
+                    </div><!-- end col -->
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 offset-2 col-lg-5 offset-lg-0 vessel-image-wrapper">
+              <img src="./files/newshepard-specs1.png"
+                alt="A diagram of New Shepard showing the crew capsule hovering above the booster." class="img-fluid">
+            </div>
+
+            <div class="col-12 col-lg-5 offset-lg-1">
+              <div class="carousel-wrapper">
+                <ul class="vessel-features">
+
+                  <li>
+                    <h3 class="h4">Crew Capsule</h3>
+                    <p>Pressurized crew capsule environmentally controlled for comfort with room for six and the largest
+                      windows to have flown in space.</p>
+                  </li>
+
+                  <li>
+                    <h3 class="h4">Ring &amp; Wedge Fins</h3>
+                    <p>Aerodynamically designed to stabilize the booster and reduce fuel use on its flight back to
+                      Earth.</p>
+                  </li>
+
+                  <li>
+                    <h3 class="h4">Drag Brakes</h3>
+                    <p>Deploy from the ring fin to reduce the booster's speed by half on its descent from space.</p>
+                  </li>
+
+                  <li>
+                    <h3 class="h4">Engine</h3>
+                    <p>The BE-3 (Blue Engine 3) propels the rocket to space and restarts for a controlled pinpoint
+                      landing on the pad. The uniquely throttleable engine slows the booster down to just 8 km/h (5 mph)
+                      for landing.</p>
+                  </li>
+
+                  <li>
+                    <h3 class="h4">Aft Fins</h3>
+                    <p>Stabilize the vehicle during ascent, steer it back to the landing pad on descent, and guide the
+                      rocket through airspeeds of up to Mach 4.</p>
+                  </li>
+
+                  <li>
+                    <h3 class="h4">Landing Gear</h3>
+                    <p>All rockets take off, not all rockets land. As a fully reusable rocket, the New Shepard booster
+                      uses landing gear that deploys for touchdown.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="capsule-details">
+        <section class="component full-width white-bg center-align padding-full">
+          <div class="container">
+            <div class="row  justify-content-center ">
+              <div class=" col-12 col-md-8 text-">
+                <hgroup>
+                  <p class="kicker  kicker--no-color-bar ">THE EXPERIENCE</p>
+                  <h2 class="h2">
+                    The Capsule
+                  </h2>
+                </hgroup>
+                <div class="body-copy">
+                  <p>With room for six astronauts, the spacious and pressurized crew capsule is
+                    environmentally-controlled for comfort and every astronaut gets their own window seat. The vehicle
+                    is fully autonomous. There are no pilots. </p>
+                </div>
+
+              </div><!-- end col -->
+            </div>
+          </div>
+        </section>
+        <div class="capsule-detail-wrapper">
+          <div class="capsule-image">
+            <img src="./files/capsule-details1.jpg"
+              alt="An interactive image of New Shepard&#39;s crew capsule highlighting features including the crew escape system, handholds to support movement during zero-g, large windows, and screens showing vehicle information during flight."
+              style="object-position: 50% 50%" class="img-fluid">
+          </div>
+          <div class="capsule-list" x-data="{
+                active: null,
+            }">
+            <ul>
+
+              <li :class="active === 0 ? &#39;active&#39; : &#39;&#39;" x-id="[&#39;capsule-details-tooltip&#39;]"
+                class="">
+
+                <button class="trigger d-none d-lg-flex" :aria-expanded="active === 0"
+                  :aria-controls="$id(&#39;capsule-details-tooltip&#39;)" @click="active = (active === 0 ? null : 0)"
+                  aria-expanded="false" aria-controls="capsule-details-tooltip-1">
+                  <span class="detail-toggle"><span class="visually-hidden">Window details</span></span>
+                  <span role="tooltip" :id="$id(&#39;capsule-details-tooltip&#39;)" class="detail-value visually-hidden"
+                    :class="active === 0 ? &#39;&#39; : &#39;visually-hidden&#39;" :hidden="active !== 0"
+                    id="capsule-details-tooltip-1" hidden="hidden">Largest windows in space</span>
+                </button>
+
+                <div class="d-block d-lg-none">
+                  <span class="detail-value">Largest windows in space</span>
+                </div>
+              </li>
+
+              <li :class="active === 1 ? &#39;active&#39; : &#39;&#39;" x-id="[&#39;capsule-details-tooltip&#39;]"
+                class="">
+
+                <button class="trigger d-none d-lg-flex" :aria-expanded="active === 1"
+                  :aria-controls="$id(&#39;capsule-details-tooltip&#39;)" @click="active = (active === 1 ? null : 1)"
+                  aria-expanded="false" aria-controls="capsule-details-tooltip-2">
+                  <span class="detail-toggle"><span class="visually-hidden">Seat details</span></span>
+                  <span role="tooltip" :id="$id(&#39;capsule-details-tooltip&#39;)" class="detail-value visually-hidden"
+                    :class="active === 1 ? &#39;&#39; : &#39;visually-hidden&#39;" :hidden="active !== 1"
+                    id="capsule-details-tooltip-2" hidden="hidden">Reclined seats with 5-point harness</span>
+                </button>
+
+                <div class="d-block d-lg-none">
+                  <span class="detail-value">Reclined seats with 5-point harness</span>
+                </div>
+              </li>
+
+              <li :class="active === 2 ? &#39;active&#39; : &#39;&#39;" x-id="[&#39;capsule-details-tooltip&#39;]"
+                class="">
+
+                <button class="trigger d-none d-lg-flex" :aria-expanded="active === 2"
+                  :aria-controls="$id(&#39;capsule-details-tooltip&#39;)" @click="active = (active === 2 ? null : 2)"
+                  aria-expanded="false" aria-controls="capsule-details-tooltip-3">
+                  <span class="detail-toggle"><span class="visually-hidden">Escape System details</span></span>
+                  <span role="tooltip" :id="$id(&#39;capsule-details-tooltip&#39;)" class="detail-value visually-hidden"
+                    :class="active === 2 ? &#39;&#39; : &#39;visually-hidden&#39;" :hidden="active !== 2"
+                    id="capsule-details-tooltip-3" hidden="hidden">Crew escape system</span>
+                </button>
+
+                <div class="d-block d-lg-none">
+                  <span class="detail-value">Crew escape system</span>
+                </div>
+              </li>
+
+              <li :class="active === 3 ? &#39;active&#39; : &#39;&#39;" x-id="[&#39;capsule-details-tooltip&#39;]"
+                class="">
+
+                <button class="trigger d-none d-lg-flex" :aria-expanded="active === 3"
+                  :aria-controls="$id(&#39;capsule-details-tooltip&#39;)" @click="active = (active === 3 ? null : 3)"
+                  aria-expanded="false" aria-controls="capsule-details-tooltip-4">
+                  <span class="detail-toggle"><span class="visually-hidden">Handhold details</span></span>
+                  <span role="tooltip" :id="$id(&#39;capsule-details-tooltip&#39;)" class="detail-value visually-hidden"
+                    :class="active === 3 ? &#39;&#39; : &#39;visually-hidden&#39;" :hidden="active !== 3"
+                    id="capsule-details-tooltip-4" hidden="hidden">Handholds for ease of movement during zero-g</span>
+                </button>
+
+                <div class="d-block d-lg-none">
+                  <span class="detail-value">Handholds for ease of movement during zero-g</span>
+                </div>
+              </li>
+
+              <li :class="active === 4 ? &#39;active&#39; : &#39;&#39;" x-id="[&#39;capsule-details-tooltip&#39;]"
+                class="">
+
+                <button class="trigger d-none d-lg-flex" :aria-expanded="active === 4"
+                  :aria-controls="$id(&#39;capsule-details-tooltip&#39;)" @click="active = (active === 4 ? null : 4)"
+                  aria-expanded="false" aria-controls="capsule-details-tooltip-5">
+                  <span class="detail-toggle"><span class="visually-hidden">Screen details</span></span>
+                  <span role="tooltip" :id="$id(&#39;capsule-details-tooltip&#39;)" class="detail-value visually-hidden"
+                    :class="active === 4 ? &#39;&#39; : &#39;visually-hidden&#39;" :hidden="active !== 4"
+                    id="capsule-details-tooltip-5" hidden="hidden">Screen for in-flight updates and indicators</span>
+                </button>
+
+                <div class="d-block d-lg-none">
+                  <span class="detail-value">Screen for in-flight updates and indicators</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="hero-wrapper    hero-wrapper--white-focus ">
+        <section class="component hero  full-height hero--background-fit-cover padding-full  ">
+          <div class="background-video-image"> <img class="adj-img" src="./files/blueorigin_ns15_06_capsuledescent.jpg"
+              alt="New Shepard&#39;s crew capsule descends under parachutes." style="object-position: 50% 50%">
+
+          </div>
+          <div class="hero-content-wrapper">
+            <div class="text-start  container ">
+
+              <div class=" col-12 col-md-6    justify-content-start  ">
+
+                <div class="hero-content  ">
+                  <div>
+                    <hgroup>
+                      <p class="kicker animate ">GRADATIM FEROCITER</p>
+
+                      <h2 class="h2 barlow-font animate text-start wht-txt ">
+
+                        Safety, Blue Origin's Top Mission
+                      </h2>
+                    </hgroup>
+                    <div class="hero-content__main">
+
+                      <div class=" col-12 hero-copy animate  white-txt ">
+                        <p><span style="text-align:left;display :block">Blue Origin has been flight testing New Shepard
+                            and its redundant safety systems since 2012. The program has had 22&nbsp;successful
+                            consecutive missions including three successful escape tests, showing the crew escape system
+                            can activate safely in any phase of flight.</span></p>
+                      </div>
+                      <div class="hero-buttons vertical-btns animate justify-content-start">
+
+                        <div class="button-wrapper">
+
+                          <div class="modal__wrapper " x-id="[&#39;modal&#39;, &#39;modal__trigger&#39;]" x-data="{
+        isOpen: false,
+        open() {
+            this.isOpen = true;
+            requestAnimationFrame(() =&gt; {
+                $focus.focus($refs[&#39;modal&#39;]);
+            });
+        },
+        close() {
+            this.isOpen = false;
+            $focus.focus($refs[&#39;modal__trigger&#39;]);
+        },
+    }">
+                            <button class="btn btn-animation empty-grey-grey" type="button" x-ref="modal__trigger"
+                              :id="$id(&#39;modal__trigger&#39;)" :aria-controls="$id(&#39;modal&#39;)" @click="open()"
+                              id="modal__trigger-3" aria-controls="modal-3">
+
+                              <span>Video: Safety, Blue Origin's Top Mission</span>
+                            </button>
+
+                            <div class="modal" x-show="isOpen" x-transition:enter-start="modal--transitioning"
+                              x-transition:leave-end="modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+                              @keyup.escape.prevent="close()" @click.outside="close()" @click.self="close()"
+                              x-ref="modal" :id="$id(&#39;modal&#39;)" :aria-labelledby="$id(&#39;modal__trigger&#39;)"
+                              role="dialog" aria-modal="true" tabindex="-1" id="modal-3"
+                              aria-labelledby="modal__trigger-3" style="display: none;">
+                              <button @click="close()" type="button" class="modal__close">
+                                <span class="visually-hidden">Close</span>
+                              </button>
+
+                              <div class="modal__content">
+                                <div class="embed-container">
+                                  <iframe
+                                    x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/ZKqpt4g5_yY?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
+                                    allowfullscreen="" allowtransparency=""
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    frameborder="0" tabindex="0" src="./files/saved_resource(2).html"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="button-wrapper">
+
+                          <a href="https://www.blueorigin.com/safety" class="btn btn-animation empty-grey-grey">
+                            <span>Learn About Safety</span>
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <section class="two-col-wrapper ">
+        <div class="container-fluid">
+
+          <div class="row row-cont">
+            <div class="col-12  col-lg-6 tc-full-bleed  order-two  hideMobile "
+              style="background-image: url(https://d3ezn0y6hdgq62.cloudfront.net/assets/blueorigin_ns15_crewcapsulewindow.jpg); background-position: 50% 50% ;">
+              <div class="tc-full-bleed-inner">
+                <div class="tc-body"></div>
+              </div>
+            </div>
+            <div class="col-12  col-lg-6 tc-text  order-one  ">
+              <div class="tc-text-inner  ">
+                <hgroup>
+                  <p class="kicker">ENVIRONMENTAL MEASURES</p>
+                  <h2 style="">Protecting Our Planet</h2>
+                </hgroup>
+                <div class="col-12  showMobile col-lg-6 tc-full-bleed"
+                  style="background-image: url(https://d3ezn0y6hdgq62.cloudfront.net/assets/blueorigin_ns15_crewcapsulewindow.jpg); background-position: 50% 50% ;">
+                </div>
+                <div class="tc-text-copy">
+                  <p>Building a road to space starts with reusable vehicles and New Shepard is the first step in
+                    realizing that mission. The entire New Shepard system has been designed for operational reusability
+                    and minimal maintenance between flights from day one to decrease the cost of access to space and
+                    reduce waste. Nearly 99% of New Shepard’s dry mass is reused, including the booster, capsule, ring
+                    fin, engine, landing gear, and parachutes. New Shepard’s BE-3PM engine is fueled by highly efficient
+                    and clean liquid oxygen and hydrogen. During flight, the only byproduct of New Shepard’s engine
+                    combustion is water vapor with no carbon&nbsp;<a target="_blank"
+                      title="Comparative Analysis of Climate Forcing and Ozone Depletion Caused by Emissions from Two Different Suborbital Launch Systems"
+                      href="https://arc.aiaa.org/doi/abs/10.2514/6.2020-4056"><strong>emissions</strong></a>.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="row ">
+
+            <div class="col-12  col-lg-6 tc-text  order-one  ">
+              <div class="tc-text-inner  ">
+                <hgroup>
+                  <p class="kicker">RESEARCH AND DEVELOPMENT</p>
+                  <h2 style="">Human-Tended Research Opportunities</h2>
+                </hgroup>
+                <div class="col-12  showMobile col-lg-6 tc-full-bleed"
+                  style="background-image: url(https://d3ezn0y6hdgq62.cloudfront.net/assets/newshepard-research1.jpg); background-position: 50% 50% ;">
+                </div>
+                <div class="tc-text-copy">
+                  <p>New Shepard payload flights have supported a wide range of research, education, and technology
+                    development. Now, with astronauts on board, we can add skilled hands, extending the laboratory to
+                    space and training crews for real-world flight operations.</p>
+                </div>
+
+                <div class="tc-buttons horizontal-btns">
+
+                  <div class="button-wrapper">
+
+                    <a href="https://www.blueorigin.com/new-shepard/payloads" class="btn btn-animation empty-blue-grey">
+                      <span>Learn More</span>
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 tc-image  order-two">
+              <div class="tc-image-inner hideMobile ">
+                <img src="./files/newshepard-research1.jpg"
+                  alt="Blue Origin employees demonstrate how astronauts sit in the New Shepard crew capsule."
+                  class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- close new row-->
+        </div>
+
+      </section>
+    </div><!-- end container / container-fluid -->
+    <div class="hero-wrapper    hero-wrapper--white-focus ">
+      <section class="component hero  full-height hero--background-fit-cover padding-full  ">
+        <div class="background-video-image"> <img class="adj-img"
+            src="./files/blueorigin_newshepard_m8_payloadcustomers-dark.jpg"
+            alt="Blue Origin employees celebrate on the landing pad in front of New Shepard following its historic first landing in 2015."
+            style="object-position: 50% 50%">
+
+        </div>
+        <div class="hero-content-wrapper">
+          <div class="text-start  container ">
+
+            <div class=" col-12 col-md-6    justify-content-start  ">
+
+              <div class="hero-content  ">
+                <div>
+                  <hgroup>
+                    <p class="kicker animate ">Send Something to Space with Blue</p>
+
+                    <h2 class="h2 barlow-font animate text-start wht-txt ">
+
+                      Fly Your Research and Technology
+                    </h2>
+                  </hgroup>
+                  <div class="hero-content__main">
+
+                    <div class=" col-12 hero-copy animate ">
+                      <p><span style="text-align:left;display :block">Whether you’re a school who wants your own space
+                          program for the cost of sports uniforms or a researcher using microgravity to test your
+                          technology, New Shepard is enabling low cost, frequent access to space.</span></p>
+                    </div>
+                    <div class="hero-buttons horizontal-btns animate justify-content-start">
+
+                      <div class="button-wrapper">
+
+                        <a href="https://www.blueorigin.com/new-shepard/payloads"
+                          class="btn btn-animation empty-grey-grey">
+                          <span>Explore Payloads</span>
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+  <footer dir="ltr" lang="en-US">
+    <section class="container-fluid social-bg-color">
+      <div class="row">
+        <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+          <h2 class="d-block d-md-flex text-white lh-1 text-uppercase follow-blue-heading" id="follow-blue-heading">
+            Follow Blue Origin
+          </h2>
+
+          <ul class="d-flex list-unstyled my-0" aria-labelledby="follow-blue-heading">
+
+            <li>
+              <a target="_blank" rel="noopener" href="https://twitter.com/blueorigin" class="lh-1">
+                <img src="./files/twitter.svg" class="social-img" alt="Twitter">
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" rel="noopener" href="https://instagram.com/blueorigin/" class="lh-1">
+                <img src="./files/instagram.svg" class="social-img" alt="Instagram">
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" rel="noopener" href="https://www.youtube.com/user/blueoriginchannel/" class="lh-1">
+                <img src="./files/youtube.svg" class="social-img" alt="Youtube">
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/blue-origin" class="lh-1">
+                <img src="./files/linkedin.svg" class="social-img" alt="LinkedIn">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-wrapper">
+      <div class="container-lg">
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 logo-container footer-line-adjust position-relative d-flex flex-column justify-content-center align-items-center">
+            <div class="footer-box">
+
+              <a class="lh-sm logo" href="https://www.blueorigin.com/">
+                <img class="logo" src="./files/featherfooter.svg" alt="Blue Origin Home">
+              </a>
+
+              <div class="legal-links-responsive-hor d-flex flex-column d-none d-lg-flex">
+                <p class="copyright-size-hor text-start text-uppercase"> © 2007 - 2023 Blue Origin, All Rights Reserved.
+                </p>
+                <ul class="privacy_terms_cont-hor ps-0">
+
+                  <li>
+                    <a class="text-decoration-none" href="https://www.blueorigin.com/privacy-policy"> Privacy Policy
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="text-decoration-none" href="https://www.blueorigin.com/terms-of-use"> Terms Of Use </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-lg-4 d-flex  flex-column justify-content-center align-items-center text-center text-lg-start">
+            <div class="footer-box">
+              <ul class="links-list-cont list-unstyled">
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/careers">Careers</a>
+                </li>
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/news/gallery">Gallery</a>
+                </li>
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/new-shepard/fly">Become an Astronaut</a>
+                </li>
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/become-a-supplier">Become a Supplier</a>
+                </li>
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/news/media-inquiries">Media Inquiries</a>
+                </li>
+
+                <li>
+                  <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                    href="https://www.blueorigin.com/accessibility">Accessibility</a>
+                </li>
+
+                <li>
+                  <div class="mb-4">
+                    <label class="form-label" for="accessibility-font">
+                      Accessible Font Styles
+                    </label>
+                    <div class="links-list-cont__select-wrap">
+                      <select id="accessibility-font" class="form-select links-list-cont__select-wrap__select"
+                        type="select" name="accessibility-font">
+                        <option class="links-list-cont__select-wrap__select__option" value="none">Default</option>
+                        <option class="links-list-cont__select-wrap__select__option" value="atkinson-hyperlegible">
+                          Atkinson Hyperlegible</option>
+                        <option class="links-list-cont__select-wrap__select__option" value="open-dyslexic">Open Dyslexic
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <!-- OneTrust Cookies Settings button start -->
+                  <button id="ot-sdk-btn"
+                    class="text-decoration-none text-white lh-sm footer__navigationLink position-relative ot-sdk-show-settings">Cookie
+                    Settings</button>
+                  <!-- OneTrust Cookies Settings button end -->
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex flex-column grey-for-form">
+            <div class="footer-box">
+              <h2 class="subscribe-header">Subscribe</h2>
+              <p class="email-top-text mb-4 fw-normal lh-sm"> Sign up to receive updates on Blue Origin's announcements,
+                launches, and opportunities. </p>
+              <div class="d-flex">
+                <form
+                  action="https://blueorigin.us9.list-manage.com/subscribe/post?u=ca4c14684ac1af3f1219b4382&amp;id=561fc27e50"
+                  method="post" name="mc-embedded-subscribe-form" target="_blank" class="align-items-center"
+                  x-data="{submitting:false}">
+                  <div class="mb-4">
+                    <p>* indicates a required field</p>
+                  </div>
+                  <div class="col-12">
+                    <label class="fw-bold lh-sm" for="EMAIL">Email<abbr class="req" title="required"> *</abbr></label>
+                    <div class="input-group mb-3">
+                      <input type="email" name="EMAIL" autocomplete="email"
+                        class="form-control subscribe-input-vars bg-transparent subscribe-border rounded-0 p-0 pb-2"
+                        id="EMAIL" required="">
+                    </div>
+                  </div>
+
+                  <label class="form-checkbox__label font-color-light-grey">
+                    <input type="checkbox" class="form-checkbox" required="">
+                    <div>
+                      <em>Please click to confirm your consent to receive email updates from us. Note - you have the
+                        right to withdraw your consent at any time by contacting us at <a
+                          href="mailto:privacy@blueorigin.com">privacy@blueorigin.com</a> or by clicking the
+                        “unsubscribe” link in the emails we send to you. Please review our <a
+                          href="https://www.blueorigin.com/privacy-policy">privacy policy</a> for more information on
+                        how we process your data.</em>
+                    </div>
+                  </label>
+
+                  <button type="submit" class="btn btn-minimal btn-animation empty-grey-grey mt-3">
+                    <span>Submit</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-block d-lg-none">
+            <div class="legal-links-responsive-vert d-flex flex-column">
+              <p class="copyright-size-vert text-uppercase lh-1"> © 2007 - 2023 Blue Origin, All Rights Reserved. </p>
+              <ul class="privacy_terms_cont-vert ps-0">
+
+                <li><a class="text-decoration-none lh-1" href="https://www.blueorigin.com/privacy-policy">Privacy
+                    Policy</a></li>
+
+                <li><a class="text-decoration-none lh-1" href="https://www.blueorigin.com/terms-of-use">Terms of Use</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script async="" src="./files/widgets.js" charset="utf-8"></script>
+
+  <script src="./files/site.js"></script>
+
+  <iframe scrolling="no" frameborder="0" allowtransparency="true"
+    src="./files/widget_iframe.d37472b4a6622d0b1fff46ad904f6896.html" title="Twitter settings iframe"
+    style="display: none;"></iframe>
+
+</body>
+
+</html>
