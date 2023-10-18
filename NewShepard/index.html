@@ -14,7 +14,7 @@
   <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#0033dd">
 
-  <script async="" src="./files/embed.js"></script>
+  <script async="" src="../files/embed.js"></script>
 
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../New/new.css">
@@ -30,98 +30,336 @@
 </head>
 
 <body class="standard-page  " id="new-shepard" data-new-gr-c-s-check-loaded="14.1131.0" data-gr-ext-installed="">
-  <header>
-    <div class="logo"><a href=""><img
-          src="https://d3ezn0y6hdgq62.cloudfront.net/components/header/blueorigin_logo_tagline.svg"></a></div>
-    <nav>
-      <ul class="header-nav">
+  <header class="header header--absolute" id="header" lang="en-US">
+    <h1 class="header__logo-wrapper">
+      <a class="header__logo" href="/index.html" aria-current="page">
+        <img class="header__logo-image" src="./files/blueorigin_logo_tagline.svg"
+          alt="Blue Origin: For The Benefit of Earth">
+      </a>
+    </h1>
+    <nav aria-label="Featured" class="header__navigation header__navigation--desktop_only">
+      <ul class="header__navigation-list">
         <li>
-          <span class="sub-span">VEHICLES</span>
-          <ul class="sub-nav">
-            <li><a href="">NEW SHEPARD</a></li>
-            <li><a href="">NEW GLENN</a></li>
-            <li><a href="">BLUE MOON</a></li>
-          </ul>
-        </li>
-        <li class="menu"><a href="">ENGINES</a></li>
-        <li class="menu"><a href="">DESTINATIONS</a></li>
-        <li>
-          <span class="sub-span">ABOUT</span>
-          <ul class="sub-nav">
-            <li><a href="/About/aboutBlue.html">ABOUT BLUE</a></li>
-            <li><a href="/New/new.html">NEWS</a></li>
-            <li><a href="/Gallery/gallery2.html">GALLERY</a></li>
-          </ul>
-        </li>
-        <li class="menu"><a href="/Career/Career.html">CAREERS</a></li>
-        <li class="menu"><a href="">SHOP</a></li>
-      </ul>
-    </nav>
-    <div class="ngonNgu" style="
-    padding: 16px;
-">
-      <span class="sub-span"><img src="https://d3ezn0y6hdgq62.cloudfront.net/components/header/language.svg" style="
-            width: 40px;
-            height: 32px;
-        "></span>
-      <ul class="sub-nav">
-        <li><a href="" class="Eng">English</a></li>
-        <li><a href="">Español</a></li>
-        <li><a href="">Français</a></li>
-        <li><a href="">中文（简体)</a></li>
-        <li><a href="">中文 (繁體)</a></li>
-        <li><a href="">日本語</a></li>
-        <li><a href=""> Português</a></li>
-        <li><a href="">عربي</a></li>
-      </ul>
-    </div>
-    <div class="fly" style="
-    padding: 16px;">
-      <a href="">FLY TO SPACE</a>
-    </div>
-    <div class="icon-menu" style="
-    padding: 16px;">
-      <span></span>
-    </div>
-    <div class="nav-grey">
-      <div class="nav-black">
-        <div class="black-menu">
-          <a href=""><img src="https://d3ezn0y6hdgq62.cloudfront.net/components/header/logo-feather.svg"></a>
-          <ul class="thanh">
-            <li><a href="../NewShepard/index.html">NEW SHEPARD</a></li>
-            <li><a href="../NewGlenn/index.html">NEW GLENN</a></li>
-            <li><a href="">BLUE MOON</a></li>
-            <li><a href="">ENGINES</a></li>
-            <li><a href="">DESTINATIONS</a></li>
-            <li><a href="/About/aboutBlue.html">ABOUT BLUE</a></li>
-            <li><a href="/New/new.html">NEWS</a></li>
-            <li><a href="/Gallery/gallery2.html">GALLERY</a></li>
-            <li><a href="/Career/Career.html">CAREERS</a></li>
-            <li><a href="">SHOP</a></li>
-          </ul>
-          <hr class="keNgang">
-          <div class="fly">
-            <a href="">FLY TO SPACE</a>
-          </div>
-          <div class="ngonNgu" style="
-                    padding: 16px;">
-            <span class="sub-span"><img src="https://d3ezn0y6hdgq62.cloudfront.net/components/header/language.svg"
-                style="
-                        width: 40px;
-                        height: 32px;
-                    "></span>
-            <ul class="sub-nav">
-              <li><a href="" class="Eng">English</a></li>
-              <li><a href="">Español</a></li>
-              <li><a href="">Français</a></li>
-              <li><a href="">中文（简体)</a></li>
-              <li><a href="">中文 (繁體)</a></li>
-              <li><a href="">日本語</a></li>
-              <li><a href=""> Português</a></li>
-              <li><a href="">عربي</a></li>
+          <div class="header__dropdown-menu "
+            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+            @click.outside="clicked = hovered = false">
+            <button class="header__dropdown-menu-trigger" type="button"
+              :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+              :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+              :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+              aria-controls="header__dropdown-menu-list-1" id="header__dropdown-menu-trigger-1">
+              Vehicles
+            </button>
+            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+              :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+              x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+              x-transition:leave-end="header__dropdown-menu-list--transitioning"
+              aria-labelledby="header__dropdown-menu-trigger-1" id="header__dropdown-menu-list-1"
+              style="display: none;">
+              <li>
+                <a class="header__dropdown-menu-list-item" href="/NewShepard/index.html">
+                  New Shepard
+                </a>
+              </li>
+              <li>
+                <a class="header__dropdown-menu-list-item" href="/NewGlenn/NewGlenn.html">
+                  New Glenn
+                </a>
+              </li>
+              <li>
+                <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/blue-moon">
+                  Blue Moon
+                </a>
+              </li>
             </ul>
           </div>
-          <!-- </div> -->
+        </li>
+        <li>
+          <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+            Engines
+          </a>
+        </li>
+        <li>
+          <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+            Destinations
+          </a>
+        </li>
+        <li>
+          <div class="header__dropdown-menu "
+            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+            @click.outside="clicked = hovered = false">
+            <button class="header__dropdown-menu-trigger" type="button"
+              :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+              :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+              :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+              aria-controls="header__dropdown-menu-list-2" id="header__dropdown-menu-trigger-2">
+              About
+            </button>
+            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+              :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+              x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+              x-transition:leave-end="header__dropdown-menu-list--transitioning"
+              aria-labelledby="header__dropdown-menu-trigger-2" id="header__dropdown-menu-list-2"
+              style="display: none;">
+              <li>
+                <a class="header__dropdown-menu-list-item" href="/About/aboutBlue.html">
+                  About Blue
+                </a>
+              </li>
+              <li>
+                <a class="header__dropdown-menu-list-item" href="/New/new.html">
+                  News
+                </a>
+              </li>
+              <li>
+                <a class="header__dropdown-menu-list-item" href="/Gallery/gallery2.html">
+                  Gallery
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="header__navigation-item" href="/Career/Career.html">
+            Careers
+          </a>
+        </li>
+        <li>
+          <a class="header__navigation-item" href="">
+            Shop
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__dropdown-menu  header__dropdown-menu--desktop_only "
+      x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+      @focusout="if (!$el.contains($event.relatedTarget)) clicked = false" @click.outside="clicked = hovered = false">
+      <button class="header__dropdown-menu-trigger" type="button"
+        :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+        :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)" :id="$id(&#39;header__dropdown-menu-trigger&#39;)"
+        @click="clicked = !clicked" aria-expanded="false" aria-controls="header__dropdown-menu-list-3"
+        id="header__dropdown-menu-trigger-3">
+        <img class="header__translation-menu-trigger-icon" src="./files/language.svg" alt="Language">
+      </button>
+      <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+        :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list " x-show="clicked || hovered"
+        x-transition:enter-start="header__dropdown-menu-list--transitioning"
+        x-transition:leave-end="header__dropdown-menu-list--transitioning"
+        aria-labelledby="header__dropdown-menu-trigger-3" id="header__dropdown-menu-list-3" style="display: none;">
+        <li lang="en-US" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="index.html" aria-current="true">
+            English
+          </a>
+        </li>
+        <li lang="es-MX" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/sp/new-shepard/fly">
+            Español
+          </a>
+        </li>
+        <li lang="fr-FR" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/fr/new-shepard/fly">
+            Français
+          </a>
+        </li>
+        <li lang="zh-CN" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/zh/new-shepard/fly">
+            中文（简体)
+          </a>
+        </li>
+        <li lang="zh-HK" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/hk/new-shepard/fly">
+            中文 (繁體)
+          </a>
+        </li>
+        <li lang="en-JP" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ja/new-shepard/fly">
+            日本語
+          </a>
+        </li>
+        <li lang="pt-BR" dir="ltr">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/pt/new-shepard/fly">
+            Português
+          </a>
+        </li>
+        <li lang="ar-EG" dir="rtl">
+          <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ar/new-shepard/fly">
+            عربي
+          </a>
+        </li>
+      </ul>
+    </div> <a class="btn btn-blue header__call-to-action  header__call-to-action--desktop_only "
+      href="https://www.blueorigin.com/new-shepard/reserve-a-seat">
+      Fly to Space
+    </a>
+    <div class="header__overlay" x-data="{
+        isOpen: false,
+        open() {
+            this.isOpen = true;
+            requestAnimationFrame(() =&gt; {
+                $focus.focus($refs[&#39;header__overlay-modal&#39;]);
+            });
+        },
+        close() {
+            this.isOpen = false;
+            $focus.focus($refs[&#39;header__overlay-trigger&#39;]);
+        },
+    }">
+      <button class="header__overlay-trigger" :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;"
+        type="button" id="header__overlay-trigger" x-ref="header__overlay-trigger" aria-controls="header__overlay-modal"
+        aria-haspopup="dialog" @click="open()">
+        <span class="visually-hidden">Main menu</span>
+      </button>
+      <div class="header__overlay-modal" aria-labelledby="header__overlay-trigger" role="dialog" aria-modal="true"
+        tabindex="-1" id="header__overlay-modal" x-ref="header__overlay-modal" x-show="isOpen"
+        x-transition:enter-start="header__overlay-modal--transitioning"
+        x-transition:leave-end="header__overlay-modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+        @keyup.escape.prevent="close()" style="display: none;">
+        <div class="header__overlay-modal-content" @click.outside="close()">
+          <div class="header__overlay-top">
+            <button class="header__overlay-trigger"
+              :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;" type="button"
+              aria-controls="header__overlay-modal" @click="close()">
+              <span class="visually-hidden">Close menu</span>
+            </button>
+          </div>
+          <div class="header__overlay-modal-container">
+            <h1 class="header__logo-wrapper">
+              <a class="header__overlay-logo" href="https://www.blueorigin.com/" aria-current="page">
+                <img class="header__overlay-logo-image" src="./files/logo-feather.svg" alt="Blue Origin">
+              </a>
+            </h1>
+            <nav aria-label="Main" class="header__overlay-navigation header__overlay-navigation--primary">
+              <ul class="header__overlay-navigation-list">
+                <li>
+                  <a class="header__navigation-item" href="/NewShepard/index.html">
+                    New Shepard
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="/NewGlenn/NewGlenn.html">
+                    New Glenn
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/blue-moon">
+                    Blue Moon
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+                    Engines
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+                    Destinations
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="/About/aboutBlue.html">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="/New/new.html">
+                    News
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="/Gallery/gallery2.html">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="/Career/Career.html">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-item" href="" target="_blank" rel="noopener">
+                    Shop
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <hr class="header__overlay-rule">
+            <a class="btn btn-blue header__call-to-action " href="">
+              Fly to Space
+            </a>
+            <div class="header__dropdown-menu "
+              x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+        clicked: false,
+        hovered: false,
+    }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+              @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+              @click.outside="clicked = hovered = false">
+              <button class="header__dropdown-menu-trigger" type="button"
+                :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+                aria-controls="header__dropdown-menu-list-4" id="header__dropdown-menu-trigger-4">
+                <img class="header__translation-menu-trigger-icon" src="./files/language.svg" alt="Language">
+              </button>
+              <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                aria-labelledby="header__dropdown-menu-trigger-4" id="header__dropdown-menu-list-4"
+                style="display: none;">
+                <li lang="en-US" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/" aria-current="true">
+                    English
+                  </a>
+                </li>
+                <li lang="es-MX" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/sp/new-shepard/fly">
+                    Español
+                  </a>
+                </li>
+                <li lang="fr-FR" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/fr/new-shepard/fly">
+                    Français
+                  </a>
+                </li>
+                <li lang="zh-CN" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/zh/new-shepard/fly">
+                    中文（简体)
+                  </a>
+                </li>
+                <li lang="zh-HK" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/hk/new-shepard/fly">
+                    中文 (繁體)
+                  </a>
+                </li>
+                <li lang="en-JP" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ja/new-shepard/fly">
+                    日本語
+                  </a>
+                </li>
+                <li lang="pt-BR" dir="ltr">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/pt/new-shepard/fly">
+                    Português
+                  </a>
+                </li>
+                <li lang="ar-EG" dir="rtl">
+                  <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ar/new-shepard/fly">
+                    عربي
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -232,7 +470,7 @@
                                     x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/fvky-qa8518?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
                                     allowfullscreen="" allowtransparency=""
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    frameborder="0" tabindex="0" src="./files/saved_resource.html"></iframe>
+                                    frameborder="0" tabindex="0" src="../files/saved_resource.html"></iframe>
                                 </div>
                               </div>
                             </div>
@@ -254,7 +492,7 @@
       <div class="hero-wrapper    hero-wrapper--white-focus ">
         <section class="component hero  full-height hero--background-fit-cover padding-full  ">
           <div class="background-video-image"> <img class="adj-img"
-              src="./files/blue-origin-first-human-flight-l0-wally-funk-astronaut-wings.jpg"
+              src="../files/blue-origin-first-human-flight-l0-wally-funk-astronaut-wings.jpg"
               alt="Wally and Jeff face each other as Jeff affixes astronaut wings to Wally&#39;s flight suit. A Blue Origin employee looks on in the background holding a microphone."
               style="object-position: 35% 34%">
 
@@ -304,7 +542,7 @@
               <source srcset="https://d3ezn0y6hdgq62.cloudfront.net/NS22-L0-SabryEgress.jpg" media="(min-width: 991px)">
               <source srcset="https://d3ezn0y6hdgq62.cloudfront.net/NS22-L0-SabryEgress_Mobile.jpg"
                 media="(min-width: 320px)">
-              <img src="./files/NS22-L0-SabryEgress_Mobile.jpg"
+              <img src="../files/NS22-L0-SabryEgress_Mobile.jpg"
                 alt="An astronaut jubilantly departs the New Shepard crew capsule following a successful flight to space."
                 style="object-position: 50% 30%">
             </picture>
@@ -379,7 +617,7 @@
                                     x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/zb9mCpEWsyE?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
                                     allowfullscreen="" allowtransparency=""
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    frameborder="0" tabindex="0" src="./files/saved_resource(1).html"></iframe>
+                                    frameborder="0" tabindex="0" src="../files/saved_resource(1).html"></iframe>
                                 </div>
                               </div>
                             </div>
@@ -430,7 +668,7 @@
           </div>
           <div class="row">
             <div class="col-8 offset-2 col-lg-5 offset-lg-0 vessel-image-wrapper">
-              <img src="./files/newshepard-specs1.png"
+              <img src="../files/newshepard-specs1.png"
                 alt="A diagram of New Shepard showing the crew capsule hovering above the booster." class="img-fluid">
             </div>
 
@@ -502,7 +740,7 @@
         </section>
         <div class="capsule-detail-wrapper">
           <div class="capsule-image">
-            <img src="./files/capsule-details1.jpg"
+            <img src="../files/capsule-details1.jpg"
               alt="An interactive image of New Shepard&#39;s crew capsule highlighting features including the crew escape system, handholds to support movement during zero-g, large windows, and screens showing vehicle information during flight."
               style="object-position: 50% 50%" class="img-fluid">
           </div>
@@ -602,7 +840,7 @@
       </section>
       <div class="hero-wrapper    hero-wrapper--white-focus ">
         <section class="component hero  full-height hero--background-fit-cover padding-full  ">
-          <div class="background-video-image"> <img class="adj-img" src="./files/blueorigin_ns15_06_capsuledescent.jpg"
+          <div class="background-video-image"> <img class="adj-img" src="../files/blueorigin_ns15_06_capsuledescent.jpg"
               alt="New Shepard&#39;s crew capsule descends under parachutes." style="object-position: 50% 50%">
 
           </div>
@@ -669,7 +907,7 @@
                                     x-effect="isOpen ? $el.setAttribute(&#39;src&#39;, &#39;https://www.youtube-nocookie.com/embed/ZKqpt4g5_yY?rel=0&#39;) : $el.removeAttribute(&#39;src&#39;)"
                                     allowfullscreen="" allowtransparency=""
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    frameborder="0" tabindex="0" src="./files/saved_resource(2).html"></iframe>
+                                    frameborder="0" tabindex="0" src="../files/saved_resource(2).html"></iframe>
                                 </div>
                               </div>
                             </div>
@@ -762,7 +1000,7 @@
             </div>
             <div class="col-12 col-lg-6 tc-image  order-two">
               <div class="tc-image-inner hideMobile ">
-                <img src="./files/newshepard-research1.jpg"
+                <img src="../files/newshepard-research1.jpg"
                   alt="Blue Origin employees demonstrate how astronauts sit in the New Shepard crew capsule."
                   class="img-fluid">
 
@@ -776,7 +1014,7 @@
     <div class="hero-wrapper    hero-wrapper--white-focus ">
       <section class="component hero  full-height hero--background-fit-cover padding-full  ">
         <div class="background-video-image"> <img class="adj-img"
-            src="./files/blueorigin_newshepard_m8_payloadcustomers-dark.jpg"
+            src="../files/blueorigin_newshepard_m8_payloadcustomers-dark.jpg"
             alt="Blue Origin employees celebrate on the landing pad in front of New Shepard following its historic first landing in 2015."
             style="object-position: 50% 50%">
 
@@ -931,12 +1169,12 @@
     });
   </script>
 
-  <script async="" src="./files/widgets.js" charset="utf-8"></script>
+  <script async="" src="../files/widgets.js" charset="utf-8"></script>
 
-  <script src="./files/site.js"></script>
+  <script src="../files/site.js"></script>
 
   <iframe scrolling="no" frameborder="0" allowtransparency="true"
-    src="./files/widget_iframe.d37472b4a6622d0b1fff46ad904f6896.html" title="Twitter settings iframe"
+    src="../files/widget_iframe.d37472b4a6622d0b1fff46ad904f6896.html" title="Twitter settings iframe"
     style="display: none;"></iframe>
 
 </body>

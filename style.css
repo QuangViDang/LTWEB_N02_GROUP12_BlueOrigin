@@ -4,7 +4,7 @@
   src: url("./fonts/FromtheStarsRg-Bold.woff") format("truetype");
   /* Thay 'font1.ttf' bằng tên tệp font mà bạn đã tải về */
 }
-h1 {
+body>h1 {
   font-family: "MyCustomFont", sans-serif;
   /* Sử dụng font-family 'MyCustomFont' cho tiêu đề h1 */
 }
@@ -13,6 +13,88 @@ h1 {
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
+@media (prefers-reduced-motion: reduce), print {
+  .animate__animated {
+    -webkit-animation-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+  .animate__animated[class*="Out"] {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  80% {
+    -webkit-transform: translateZ(0) scaleY(0.95);
+    transform: translateZ(0) scaleY(0.95);
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  80% {
+    -webkit-transform: translateZ(0) scaleY(0.95);
+    transform: translateZ(0) scaleY(0.95);
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -96,87 +178,6 @@ h1 {
   -webkit-animation-duration: calc(var(--animate-duration) * 3);
   animation-duration: 3s;
   animation-duration: calc(var(--animate-duration) * 3);
-}
-@media (prefers-reduced-motion: reduce), print {
-  .animate__animated {
-    -webkit-animation-duration: 1ms !important;
-    animation-duration: 1ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 1ms !important;
-    transition-duration: 1ms !important;
-  }
-  .animate__animated[class*="Out"] {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes bounce {
-  0%,
-  20%,
-  53%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-    transform: translate3d(0, -30px, 0) scaleY(1.1);
-  }
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-    transform: translate3d(0, -15px, 0) scaleY(1.05);
-  }
-  80% {
-    -webkit-transform: translateZ(0) scaleY(0.95);
-    transform: translateZ(0) scaleY(0.95);
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-    transform: translate3d(0, -4px, 0) scaleY(1.02);
-  }
-}
-@keyframes bounce {
-  0%,
-  20%,
-  53%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-    transform: translate3d(0, -30px, 0) scaleY(1.1);
-  }
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-    transform: translate3d(0, -15px, 0) scaleY(1.05);
-  }
-  80% {
-    -webkit-transform: translateZ(0) scaleY(0.95);
-    transform: translateZ(0) scaleY(0.95);
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-    transform: translate3d(0, -4px, 0) scaleY(1.02);
-  }
 }
 .animate__bounce {
   -webkit-animation-name: bounce;
@@ -4096,7 +4097,7 @@ h1 {
     hsla(0, 0%, 100%, 0.15),
     hsla(0, 0%, 100%, 0)
   );
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "MyCustomFont" var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -4133,10 +4134,10 @@ body {
   background-color: var(--bs-body-bg);
   color: #212529;
   color: var(--bs-body-color);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
+  font-family: "MyCustomFont" system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-family: var(--bs-body-font-family);
+  font-family: "MyCustomFont", sans-serif;
   font-size: 1rem;
   font-size: var(--bs-body-font-size);
   font-weight: 400;
@@ -4306,9 +4307,9 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
-    Courier New, monospace;
-  font-family: var(--bs-font-monospace);
+  font-family: "MyCustomFont" SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 1em;
 }
 pre {
@@ -4389,7 +4390,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "MyCustomFont", sans-serif;
   font-size: inherit;
   line-height: inherit;
   margin: 0;
@@ -6817,7 +6818,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: "MyCustomFont", sans-serif;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -6838,7 +6839,7 @@ textarea.form-control.is-invalid {
   color: var(--bs-btn-color);
   cursor: pointer;
   display: inline-block;
-  font-family: var(--bs-btn-font-family);
+  font-family: "MyCustomFont" var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
@@ -9551,10 +9552,10 @@ fieldset:disabled .btn {
   --bs-tooltip-arrow-height: 0.4rem;
   word-wrap: break-word;
   display: block;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
+  font-family: "MyCustomFont" system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "MyCustomFont" var(--bs-font-sans-serif);
   font-size: var(--bs-tooltip-font-size);
   font-style: normal;
   font-weight: 400;
@@ -9676,10 +9677,10 @@ fieldset:disabled .btn {
   border: var(--bs-popover-border-width) solid var(--bs-popover-border-color);
   border-radius: var(--bs-popover-border-radius);
   display: block;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
+  font-family: "MyCustomFont" system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, Helvetica Neue, Liberation Sans, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "MyCustomFont" var(--bs-font-sans-serif);
   font-size: var(--bs-popover-font-size);
   font-style: normal;
   font-weight: 400;
@@ -11784,9 +11785,9 @@ fieldset:disabled .btn {
   gap: 3rem !important;
 }
 .font-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
-    Courier New, monospace !important;
-  font-family: var(--bs-font-monospace) !important;
+  font-family: "MyCustomFont" SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace !important;
+  font-family: "MyCustomFont" var(--bs-font-monospace) !important;
 }
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
@@ -14670,70 +14671,13 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-@font-face {
-  font-family: Belters;
-  font-style: normal;
-  font-weight: "regular";
-  src: url(/fonts/Belters-Regular.otf) format("opentype");
-}
-@font-face {
-  font-family: HeroicCondensed;
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/HeroicCondensed-Bold.woff2) format("woff2"),
-    url(/fonts/HeroicCondensed-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: HeroicCondensed;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/HeroicCondensed-Medium.woff2) format("woff2"),
-    url(/fonts/HeroicCondensed-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: HeroicCondensed;
-  font-style: normal;
-  font-weight: lighter;
-  src: url(/fonts/HeroicCondensed-Light.woff2) format("woff2"),
-    url(/fonts/HeroicCondensed-Light.woff) format("woff");
-}
-@font-face {
-  font-family: FromtheStars;
-  font-style: normal;
-  font-weight: 200;
-  src: url(/fonts/FromtheStarsEl-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-family: FromtheStars;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/FromtheStarsLt-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-family: FromtheStars;
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/FromtheStarsRg-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: OpenDyslexic;
-  font-style: normal;
-  font-weight: 200;
-  src: url(/fonts/OpenDyslexic-Regular.otf) format("opentype");
-}
-@font-face {
-  font-family: AtkinsonHyperlegible;
-  font-style: normal;
-  font-weight: 200;
-  src: url(/fonts/Atkinson-Hyperlegible-Regular-102a.woff2) format("woff2");
-}
 body {
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont", sans-serif;
 }
 .h1,
 h1 {
   color: #fff;
-  font-family:  "MyCustomFont", sans-serif;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 300;
@@ -14759,7 +14703,7 @@ h1 b {
 }
 .h1.stars-font,
 h1.stars-font {
-  font-family:  "MyCustomFont", sans-serif;
+  font-family: "MyCustomFont", sans-serif;
   font-size: 3.5rem;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -14796,7 +14740,7 @@ h1.heroic-font {
 }
 .font-size-xxxl {
   color: #fff;
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 12.75rem;
   font-style: normal;
   font-weight: 300;
@@ -14808,7 +14752,7 @@ h1.heroic-font {
   font-weight: 700;
 }
 .font-size-xxxl.stars-font {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 12.75rem;
 }
 @media (max-width: 991.98px) {
@@ -14847,7 +14791,7 @@ h1.heroic-font {
 }
 .font-size-xxl {
   color: #fff;
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 8.75rem;
   font-style: normal;
   font-weight: 300;
@@ -14859,7 +14803,7 @@ h1.heroic-font {
   font-weight: 700;
 }
 .font-size-xxl.stars-font {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 8.75rem;
 }
 @media (max-width: 991.98px) {
@@ -14898,7 +14842,7 @@ h1.heroic-font {
 }
 .h2,
 h2 {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 3.125rem;
   letter-spacing: 0.025rem;
   line-height: 3.4375rem;
@@ -14923,7 +14867,7 @@ h3 {
 .h4,
 h3,
 h4 {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-style: normal;
 }
 .h4,
@@ -14943,7 +14887,7 @@ h4 {
 }
 .h5,
 h5 {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 1.5625rem;
   font-weight: 700;
   letter-spacing: 0.0375rem;
@@ -14999,7 +14943,7 @@ h5 strong {
   font-weight: 700;
 }
 .heroic-font {
-  font-family: HeroicCondensed, sans-serif !important;
+  font-family: "MyCustomFont" HeroicCondensed, sans-serif !important;
 }
 body {
   background-color: #fff;
@@ -15024,7 +14968,7 @@ body.takeover-enabled {
 .kicker {
   color: #fff;
   display: inline-block;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -15078,7 +15022,7 @@ body.takeover-enabled {
 .open-dyslexic li,
 .open-dyslexic p,
 .open-dyslexic span {
-  font-family: OpenDyslexic, sans-serif;
+  font-family: "MyCustomFont" OpenDyslexic, sans-serif;
 }
 .atkinson-hyperlegible .h3,
 .atkinson-hyperlegible .h4,
@@ -15092,7 +15036,7 @@ body.takeover-enabled {
 .atkinson-hyperlegible li,
 .atkinson-hyperlegible p,
 .atkinson-hyperlegible span {
-  font-family: AtkinsonHyperlegible, sans-serif;
+  font-family: "MyCustomFont" AtkinsonHyperlegible, sans-serif;
 }
 .button--unstyled {
   -webkit-appearance: none;
@@ -15123,7 +15067,7 @@ body.takeover-enabled {
   --bs-btn-focus-shadow-rgb: 0, 51, 221;
   border: 0;
   border-radius: 2px;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -15733,7 +15677,7 @@ body.takeover-enabled {
   }
 }
 .header__overlay-navigation--primary {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 1.5rem;
 }
 @media (min-width: 576px) {
@@ -16284,7 +16228,7 @@ section.form form .submitted {
   padding-top: 20px;
 }
 .social-bg-color .follow-blue-heading {
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -16561,7 +16505,7 @@ section.form form .submitted {
   color: #d8d8d8;
 }
 .footer-wrapper .subscribe-header {
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
@@ -16778,7 +16722,7 @@ section.landing-footer .product-footer-left img {
 }
 section.landing-footer .product-footer-left p {
   color: #fff;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -16925,7 +16869,7 @@ body.news-entry .news-entry-social {
 }
 body.news-entry .news-entry-social .nes-share {
   color: #2a2a2a;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -17249,7 +17193,7 @@ section.news-archive
 .hero-wrapper .kicker {
   color: #fff;
   display: inline-block;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -17391,7 +17335,7 @@ section.hero .hero__slideshow-slide--current {
   z-index: -1;
 }
 section.hero .vertical-kicker .kicker {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   text-transform: none;
@@ -17883,7 +17827,7 @@ body {
   border: 0;
   border-bottom: 2px solid #03d;
   color: #03d;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -17945,7 +17889,7 @@ body {
 }
 .main-container .main-wrapper .message-txt-cont .message-heading {
   color: #03d;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1.875rem;
   font-style: normal;
   letter-spacing: 0.0375rem;
@@ -18626,7 +18570,7 @@ body {
   font-size: 1rem;
 }
 .two-col-wrapper .tc-image .tc-image-inner img {
-  font-family: "object-fit: cover;";
+  font-family: "MyCustomFont" "object-fit: cover;";
   height: 100%;
   left: 0;
   -o-object-fit: cover;
@@ -18868,11 +18812,11 @@ body {
 }
 .facts-figures__header {
   color: #03d;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-weight: 700;
 }
 .facts-figures__hero-font {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
 }
 .facts-figures .stats-wrapper {
   margin-left: 150px;
@@ -19141,7 +19085,7 @@ body {
   border-radius: 2px;
   color: #fff;
   cursor: pointer;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 14px;
   font-weight: 600;
   height: auto;
@@ -19425,7 +19369,7 @@ section.contained-image.no-padding-bottom {
 .terms-component ol li:before {
   color: #2a2a2a;
   content: counter(counter, decimal) ".";
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   left: -30px;
@@ -19484,7 +19428,7 @@ section.contained-image.no-padding-bottom {
 }
 .terms-component .h3,
 .terms-component h3 {
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.04375rem;
@@ -19565,7 +19509,7 @@ section.contained-image.no-padding-bottom {
   border-bottom: 10px solid #03d;
   color: #fff;
   cursor: pointer;
-  font-family: HeroicCondensed, sans-serif;
+  font-family: "MyCustomFont" HeroicCondensed, sans-serif;
   font-size: 5rem;
   font-style: normal;
   font-weight: 700;
@@ -19652,7 +19596,7 @@ section.video {
   bottom: 0;
   color: #e8edfc;
   display: flex;
-  font-family: HeroicCondensed, sans-serif;
+  font-family: "MyCustomFont" HeroicCondensed, sans-serif;
   font-weight: 700;
   justify-content: center;
   left: 0;
@@ -19842,7 +19786,7 @@ section.video {
 @media (max-width: 767.98px) {
   .quote-img-blk .blk-wrapper .h2,
   .quote-img-blk .blk-wrapper h2 {
-    font-family: FromtheStars, sans-serif;
+    font-family: "MyCustomFont" FromtheStars, sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     line-height: 1.5;
@@ -19954,7 +19898,7 @@ section.video {
   width: 6px;
 }
 .two-col-list-w-image ul li p.lead {
-  font-family: FromtheStars, sans-serif;
+  font-family: "MyCustomFont" FromtheStars, sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -20129,7 +20073,7 @@ section.video {
   bottom: 0;
   color: #e8edfc;
   display: flex;
-  font-family: HeroicCondensed, sans-serif;
+  font-family: "MyCustomFont" HeroicCondensed, sans-serif;
   font-weight: 700;
   justify-content: center;
   left: 0;
@@ -20480,7 +20424,7 @@ section.filter-gallery .load-more-cont .load-btn {
   background-color: transparent;
   border: 0;
   color: #03d;
-  font-family: Barlow, sans-serif;
+  font-family: "MyCustomFont" Barlow, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;

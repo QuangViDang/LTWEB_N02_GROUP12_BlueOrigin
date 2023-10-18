@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- OneTrust Cookies Consent Notice end for www.blueorigin.com -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.blueorigin.com/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.blueorigin.com/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.blueorigin.com/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.blueorigin.com/img/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="https://www.blueorigin.com/img/favicon/favicon.ico">
+    <link rel="mask-icon" href="https://www.blueorigin.com/img/favicon/safari-pinned-tab.svg" color="#0033dd">
+    <meta name="msapplication-TileColor" content="#0033dd">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0033dd">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home | Blue Origin</title>
+</head>
+
+<body class="standard-page  " id="home" data-new-gr-c-s-check-loaded="14.1131.0" data-gr-ext-installed=""
+    data-new-gr-c-s-loaded="14.1131.0">
+
+    <header class="header header--absolute" id="header" lang="en-US">
+        <h1 class="header__logo-wrapper">
+            <a class="header__logo" href="/index.html" aria-current="page">
+                <img class="header__logo-image" src="../files/blueorigin_logo_tagline.svg"
+                    alt="Blue Origin: For The Benefit of Earth">
+            </a>
+        </h1>
+        <nav aria-label="Featured" class="header__navigation header__navigation--desktop_only">
+            <ul class="header__navigation-list">
+                <li>
+                    <div class="header__dropdown-menu "
+                        x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+                clicked: false,
+                hovered: false,
+            }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+                        @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+                        @click.outside="clicked = hovered = false">
+                        <button class="header__dropdown-menu-trigger" type="button"
+                            :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                            :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                            :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked"
+                            aria-expanded="false" aria-controls="header__dropdown-menu-list-1"
+                            id="header__dropdown-menu-trigger-1">
+                            Vehicles
+                        </button>
+                        <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                            :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                            x-show="clicked || hovered"
+                            x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                            x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                            aria-labelledby="header__dropdown-menu-trigger-1" id="header__dropdown-menu-list-1"
+                            style="display: none;">
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="/NewShepard/index.html">
+                                    New Shepard
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="/NewGlenn/NewGlenn.html">
+                                    New Glenn
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="">
+                                    Blue Moon
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+                        Engines
+                    </a>
+                </li>
+                <li>
+                    <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+                        Destinations
+                    </a>
+                </li>
+                <li>
+                    <div class="header__dropdown-menu "
+                        x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+                clicked: false,
+                hovered: false,
+            }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+                        @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+                        @click.outside="clicked = hovered = false">
+                        <button class="header__dropdown-menu-trigger" type="button"
+                            :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                            :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                            :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked"
+                            aria-expanded="false" aria-controls="header__dropdown-menu-list-2"
+                            id="header__dropdown-menu-trigger-2">
+                            About
+                        </button>
+                        <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                            :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                            x-show="clicked || hovered"
+                            x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                            x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                            aria-labelledby="header__dropdown-menu-trigger-2" id="header__dropdown-menu-list-2"
+                            style="display: none;">
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="/About/aboutBlue.html">
+                                    About Blue
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="/New/new.html">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__dropdown-menu-list-item" href="/Gallery/gallery2.html">
+                                    Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="header__navigation-item" href="/Career/Career.html">
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a class="header__navigation-item" href="">
+                        Shop
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__dropdown-menu  header__dropdown-menu--desktop_only "
+            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]" x-data="{
+                clicked: false,
+                hovered: false,
+            }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+            @click.outside="clicked = hovered = false">
+            <button class="header__dropdown-menu-trigger" type="button"
+                :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked" aria-expanded="false"
+                aria-controls="header__dropdown-menu-list-3" id="header__dropdown-menu-trigger-3">
+                <img class="header__translation-menu-trigger-icon" src="../files/language.svg" alt="Language">
+            </button>
+            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                x-show="clicked || hovered" x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                aria-labelledby="header__dropdown-menu-trigger-3" id="header__dropdown-menu-list-3"
+                style="display: none;">
+                <li lang="en-US" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="index.html" aria-current="true">
+                        English
+                    </a>
+                </li>
+                <li lang="es-MX" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/sp/new-shepard/fly">
+                        Español
+                    </a>
+                </li>
+                <li lang="fr-FR" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/fr/new-shepard/fly">
+                        Français
+                    </a>
+                </li>
+                <li lang="zh-CN" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/zh/new-shepard/fly">
+                        中文（简体)
+                    </a>
+                </li>
+                <li lang="zh-HK" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/hk/new-shepard/fly">
+                        中文 (繁體)
+                    </a>
+                </li>
+                <li lang="en-JP" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ja/new-shepard/fly">
+                        日本語
+                    </a>
+                </li>
+                <li lang="pt-BR" dir="ltr">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/pt/new-shepard/fly">
+                        Português
+                    </a>
+                </li>
+                <li lang="ar-EG" dir="rtl">
+                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/ar/new-shepard/fly">
+                        عربي
+                    </a>
+                </li>
+            </ul>
+        </div> <a class="btn btn-blue header__call-to-action  header__call-to-action--desktop_only "
+            href="https://www.blueorigin.com/new-shepard/reserve-a-seat">
+            Fly to Space
+        </a>
+        <div class="header__overlay" x-data="{
+                isOpen: false,
+                open() {
+                    this.isOpen = true;
+                    requestAnimationFrame(() =&gt; {
+                        $focus.focus($refs[&#39;header__overlay-modal&#39;]);
+                    });
+                },
+                close() {
+                    this.isOpen = false;
+                    $focus.focus($refs[&#39;header__overlay-trigger&#39;]);
+                },
+            }">
+            <button class="header__overlay-trigger"
+                :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;" type="button"
+                id="header__overlay-trigger" x-ref="header__overlay-trigger" aria-controls="header__overlay-modal"
+                aria-haspopup="dialog" @click="open()">
+                <span class="visually-hidden">Main menu</span>
+            </button>
+            <div class="header__overlay-modal" aria-labelledby="header__overlay-trigger" role="dialog" aria-modal="true"
+                tabindex="-1" id="header__overlay-modal" x-ref="header__overlay-modal" x-show="isOpen"
+                x-transition:enter-start="header__overlay-modal--transitioning"
+                x-transition:leave-end="header__overlay-modal--transitioning" x-trap.noscroll.noreturn="isOpen"
+                @keyup.escape.prevent="close()" style="display: none;">
+                <div class="header__overlay-modal-content" @click.outside="close()">
+                    <div class="header__overlay-top">
+                        <button class="header__overlay-trigger"
+                            :class="isOpen ? &#39;header__overlay-trigger--open&#39; : &#39;&#39;" type="button"
+                            aria-controls="header__overlay-modal" @click="close()">
+                            <span class="visually-hidden">Close menu</span>
+                        </button>
+                    </div>
+                    <div class="header__overlay-modal-container">
+                        <h1 class="header__logo-wrapper">
+                            <a class="header__overlay-logo" href="https://www.blueorigin.com/" aria-current="page">
+                                <img class="header__overlay-logo-image" src="../files/logo-feather.svg"
+                                    alt="Blue Origin">
+                            </a>
+                        </h1>
+                        <nav aria-label="Main" class="header__overlay-navigation header__overlay-navigation--primary">
+                            <ul class="header__overlay-navigation-list">
+                                <li>
+                                    <a class="header__navigation-item" href="/NewShepard/index.html">
+                                        New Shepard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="/NewGlenn/NewGlenn.html">
+                                        New Glenn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="https://www.blueorigin.com/blue-moon">
+                                        Blue Moon
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="https://www.blueorigin.com/engines">
+                                        Engines
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="https://www.blueorigin.com/destinations">
+                                        Destinations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="/About/aboutBlue.html">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="/New/new.html">
+                                        News
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="/Gallery/gallery2.html">
+                                        Gallery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="/Career/Career.html">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__navigation-item" href="" target="_blank" rel="noopener">
+                                        Shop
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <hr class="header__overlay-rule">
+                        <a class="btn btn-blue header__call-to-action " href="">
+                            Fly to Space
+                        </a>
+                        <div class="header__dropdown-menu "
+                            x-id="[&#39;header__dropdown-menu-list&#39;, &#39;header__dropdown-menu-trigger&#39;]"
+                            x-data="{
+                clicked: false,
+                hovered: false,
+            }" @mouseenter="hovered = true" @mouseleave="hovered = false"
+                            @focusout="if (!$el.contains($event.relatedTarget)) clicked = false"
+                            @click.outside="clicked = hovered = false">
+                            <button class="header__dropdown-menu-trigger" type="button"
+                                :aria-expanded="clicked || hovered ? &#39;true&#39; : &#39;false&#39;"
+                                :aria-controls="$id(&#39;header__dropdown-menu-list&#39;)"
+                                :id="$id(&#39;header__dropdown-menu-trigger&#39;)" @click="clicked = !clicked"
+                                aria-expanded="false" aria-controls="header__dropdown-menu-list-4"
+                                id="header__dropdown-menu-trigger-4">
+                                <img class="header__translation-menu-trigger-icon" src="../files/language.svg"
+                                    alt="Language">
+                            </button>
+                            <ul :aria-labelledby="$id(&#39;header__dropdown-menu-trigger&#39;)"
+                                :id="$id(&#39;header__dropdown-menu-list&#39;)" class="header__dropdown-menu-list "
+                                x-show="clicked || hovered"
+                                x-transition:enter-start="header__dropdown-menu-list--transitioning"
+                                x-transition:leave-end="header__dropdown-menu-list--transitioning"
+                                aria-labelledby="header__dropdown-menu-trigger-4" id="header__dropdown-menu-list-4"
+                                style="display: none;">
+                                <li lang="en-US" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item" href="https://www.blueorigin.com/"
+                                        aria-current="true">
+                                        English
+                                    </a>
+                                </li>
+                                <li lang="es-MX" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/sp/new-shepard/fly">
+                                        Español
+                                    </a>
+                                </li>
+                                <li lang="fr-FR" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/fr/new-shepard/fly">
+                                        Français
+                                    </a>
+                                </li>
+                                <li lang="zh-CN" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/zh/new-shepard/fly">
+                                        中文（简体)
+                                    </a>
+                                </li>
+                                <li lang="zh-HK" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/hk/new-shepard/fly">
+                                        中文 (繁體)
+                                    </a>
+                                </li>
+                                <li lang="en-JP" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/ja/new-shepard/fly">
+                                        日本語
+                                    </a>
+                                </li>
+                                <li lang="pt-BR" dir="ltr">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/pt/new-shepard/fly">
+                                        Português
+                                    </a>
+                                </li>
+                                <li lang="ar-EG" dir="rtl">
+                                    <a class="header__dropdown-menu-list-item"
+                                        href="https://www.blueorigin.com/ar/new-shepard/fly">
+                                        عربي
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main" tabindex="-1">
+        <div class="standard-page-components">
+            <div class="hero-wrapper    hero-wrapper--white-focus ">
+                <section class="component hero full-height hero--background-fit-cover padding-full scrolled">
+                    <div class="background-video-image fade-in">
+                        <img class="adj-img" src="../files/webheader_bluemoon.png" alt=""
+                            style="object-position: 50% 50%">
+                    </div>
+                    <div class="hero-content-wrapper">
+                        <div class="text-start  container ">
+                            <div class=" col-12 col-md-6    justify-content-start  ">
+                                <div class="hero-content  ">
+                                    <div>
+                                        <hgroup>
+                                            <p class="kicker animate animated">Lunar Landers</p>
+                                            <h1 class="font-size-xxl stars-font animate text-start wht-txt animated">
+                                                <b>Blue Moon</b>
+                                            </h1>
+                                        </hgroup>
+                                        <div class="hero-content__main">
+                                            <div class="col-12 hero-copy animate animated">
+                                                <p>Blue Moon lander variants provide low-cost, recurring access to the
+                                                    Moon for both cargo and crew.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="component full-width blue-bg center-align padding-half">
+                <div class="container">
+                    <div class="row  justify-content-center ">
+                        <div class=" col-10 col-md-8 text-center">
+                            <h2 class="h2">
+                                Blue Moon’s capability to provide precise and soft landings will enable a sustained
+                                human presence on the Moon.
+                            </h2>
+                        </div><!-- end col -->
+                    </div>
+                </div>
+            </section>
+            <section class="two-col-wrapper  include-pad ">
+                <div class="container">
+                    <div class="row row-cont">
+                        <div class="col-12 col-lg-6 tc-image  order-one ">
+                            <div class="tc-image-inner hideMobile ">
+                                <img src="../files/moon_city.png"
+                                    alt="The gray, cratered face of the Moon depicted with blue lights from human settlements spreading across the lunar surface."
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12  col-lg-6 tc-text  order-two ">
+                            <div class="tc-text-inner  ">
+                                <h2 style="">SLD National Team</h2>
+                                <div class="col-12  showMobile col-lg-6 tc-full-bleed"
+                                    style="background-image: url(https://d3ezn0y6hdgq62.cloudfront.net/assets/sld/moon_city.png); background-position: 50% 89% ;">
+                                </div>
+                                <div class="tc-text-copy">
+                                    <p>Under NASA's NextSTEP-2 Appendix P Sustaining Lunar Development (SLD) contract,
+                                        Blue Origin and its National Team partners will develop and fly the Blue Moon
+                                        MK2 lunar lander that can make a precision landing anywhere on the Moon’s
+                                        surface.</p>
+                                </div>
+                                <div class="tc-buttons horizontal-btns">
+                                    <div class="button-wrapper"> <a
+                                            href="https://www.blueorigin.com/blue-moon/sld-national-team"
+                                            class="btn btn-animation empty-blue-grey">
+                                            <span>Explore SLD National Team</span>
+                                        </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end container / container-fluid -->
+            </section>
+
+
+        </div>
+    </main>
+    <footer dir="ltr" lang="en-US">
+        <section class="container-fluid social-bg-color">
+            <div class="row">
+                <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <h2 class="d-block d-md-flex text-white lh-1 text-uppercase follow-blue-heading"
+                        id="follow-blue-heading">
+                        Follow Blue Origin
+                    </h2>
+                    <ul class="d-flex list-unstyled my-0" aria-labelledby="follow-blue-heading">
+                        <li>
+                            <a target="_blank" rel="noopener" href="https://twitter.com/blueorigin" class="lh-1">
+                                <img src="../files/twitter.svg" class="social-img" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" href="https://instagram.com/blueorigin/" class="lh-1">
+                                <img src="../files/instagram.svg" class="social-img" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" href="https://www.youtube.com/user/blueoriginchannel/"
+                                class="lh-1">
+                                <img src="../files/youtube.svg" class="social-img" alt="Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/blue-origin"
+                                class="lh-1">
+                                <img src="../files/linkedin.svg" class="social-img" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-wrapper">
+            <div class="container-lg">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-4 logo-container footer-line-adjust position-relative d-flex flex-column justify-content-center align-items-center">
+                        <div class="footer-box"> <a class="lh-sm logo" href="https://www.blueorigin.com/">
+                                <img class="logo" src="../files/featherfooter.svg" alt="Blue Origin Home">
+                            </a>
+                            <div class="legal-links-responsive-hor d-flex flex-column d-none d-lg-flex">
+                                <p class="copyright-size-hor text-start text-uppercase"> © 2007 - 2023 Blue Origin, All
+                                    Rights Reserved. </p>
+                                <ul class="privacy_terms_cont-hor ps-0">
+                                    <li>
+                                        <a class="text-decoration-none"
+                                            href="https://www.blueorigin.com/privacy-policy"> Privacy Policy </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none" href="https://www.blueorigin.com/terms-of-use">
+                                            Terms Of Use </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-lg-4 d-flex  flex-column justify-content-center align-items-center text-center text-lg-start">
+                        <div class="footer-box">
+                            <ul class="links-list-cont list-unstyled">
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/careers">Careers</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/news/gallery">Gallery</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/new-shepard/fly">Become an Astronaut</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/become-a-supplier">Become a Supplier</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/news/media-inquiries">Media Inquiries</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white lh-sm footer__navigationLink position-relative"
+                                        href="https://www.blueorigin.com/accessibility">Accessibility</a>
+                                </li>
+                                <li>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="accessibility-font">
+                                            Accessible Font Styles
+                                        </label>
+                                        <div class="links-list-cont__select-wrap">
+                                            <select id="accessibility-font"
+                                                class="form-select links-list-cont__select-wrap__select" type="select"
+                                                name="accessibility-font">
+                                                <option class="links-list-cont__select-wrap__select__option"
+                                                    value="none">Default</option>
+                                                <option class="links-list-cont__select-wrap__select__option"
+                                                    value="atkinson-hyperlegible">Atkinson Hyperlegible</option>
+                                                <option class="links-list-cont__select-wrap__select__option"
+                                                    value="open-dyslexic">Open Dyslexic</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- OneTrust Cookies Settings button start -->
+                                    <button id="ot-sdk-btn"
+                                        class="text-decoration-none text-white lh-sm footer__navigationLink position-relative ot-sdk-show-settings">Cookie
+                                        Settings</button>
+                                    <!-- OneTrust Cookies Settings button end -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex flex-column grey-for-form">
+                        <div class="footer-box">
+                            <h2 class="subscribe-header">Subscribe</h2>
+                            <p class="email-top-text mb-4 fw-normal lh-sm"> Sign up to receive updates on Blue Origin's
+                                announcements, launches, and opportunities. </p>
+                            <div class="d-flex">
+                                <form
+                                    action="https://blueorigin.us9.list-manage.com/subscribe/post?u=ca4c14684ac1af3f1219b4382&amp;id=561fc27e50"
+                                    method="post" name="mc-embedded-subscribe-form" target="_blank"
+                                    class="align-items-center" x-data="{submitting:false}">
+                                    <div class="mb-4">
+                                        <p>* indicates a required field</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="fw-bold lh-sm" for="EMAIL">Email<abbr class="req"
+                                                title="required"> *</abbr></label>
+                                        <div class="input-group mb-3">
+                                            <input type="email" name="EMAIL" autocomplete="email"
+                                                class="form-control subscribe-input-vars bg-transparent subscribe-border rounded-0 p-0 pb-2"
+                                                id="EMAIL" required="">
+                                        </div>
+                                    </div> <label class="form-checkbox__label font-color-light-grey">
+                                        <input type="checkbox" class="form-checkbox" required="">
+                                        <div>
+                                            <em>Please click to confirm your consent to receive email updates from us.
+                                                Note - you have the right to withdraw your consent at any time by
+                                                contacting us at <a
+                                                    href="mailto:privacy@blueorigin.com">privacy@blueorigin.com</a> or
+                                                by clicking the “unsubscribe” link in the emails we send to you. Please
+                                                review our <a href="https://www.blueorigin.com/privacy-policy">privacy
+                                                    policy</a> for more information on how we process your data.</em>
+                                        </div>
+                                    </label> <button type="submit"
+                                        class="btn btn-minimal btn-animation empty-grey-grey mt-3">
+                                        <span>Submit</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <div class="legal-links-responsive-vert d-flex flex-column">
+                            <p class="copyright-size-vert text-uppercase lh-1"> © 2007 - 2023 Blue Origin, All Rights
+                                Reserved. </p>
+                            <ul class="privacy_terms_cont-vert ps-0">
+                                <li><a class="text-decoration-none lh-1"
+                                        href="https://www.blueorigin.com/privacy-policy">Privacy Policy</a></li>
+                                <li><a class="text-decoration-none lh-1"
+                                        href="https://www.blueorigin.com/terms-of-use">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script async="" src="../files/widgets.js.download" charset="utf-8"></script>
+
+    <script src="../files/site.js.download"></script>
+    <iframe scrolling="no" frameborder="0" allowtransparency="true"
+        src="../files/widget_iframe.d37472b4a6622d0b1fff46ad904f6896.html" title="Twitter settings iframe"
+        style="display: none;"></iframe>
+</body>
+
+</html>
