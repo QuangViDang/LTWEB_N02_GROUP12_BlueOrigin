@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="//shop.blueorigin.com/cdn/shop/files/BlueOrigin-Favicon.png?crop=center&height=32&v=1666199468&width=32">
-    <link rel="stylesheet" href="Register.css">
-    <title>Create Account - Blue Twelve Shop</title>
+    <link rel="stylesheet" href="LogIn.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Account - Blue Twelve Shop</title>
 
     <link
         rel="stylesheet"
@@ -22,7 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
 </head>
 <body>
     <header>
@@ -225,7 +226,7 @@
                     <i class="fa-light fa-user icon-user"></i>
                 </a>
 
-                <a href="Cart.html">
+                <a href="../BlueShop&Cart/Cart.html">
                     <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
                         <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"></path>
                     </svg>
@@ -234,33 +235,26 @@
         </div>
     </header>
 
-    <div class="registerAccount">
-        <div class="register-head"><h1>Create account</h1></div>
-        <form onsubmit="register()">
-            <div class="registerFirst">
-                <input type="text" placeholder="First name" class="firstName" id="firstname">
-                <label class="firstLabel">First name</label>
+    <div class="logInAccount">
+        <div class="logInAccount-head"><h1>Login</h1></div>
+        <form onsubmit="login()">
+            <div id="error"></div>
+            <div class="InputField logInEmail">
+                <input type="email" placeholder="Email" class="emailLogIn" id="email">
+                <label class="emailLabelLogIn">Email</label>
             </div>
     
-            <div class="registerLast">
-                <input type="text" placeholder="Last name" class="lastName" id="lastname">
-                <label class="lastLabel">Last name</label>
+            <div class="InputField logInPass">
+                <input type="password" placeholder="Password" class="passLogIn" id="password">
+                <label class="passLabelLogIn">Password</label>
             </div>
-            
-            <div class="inputField registerEmail">
-                <input type="email" placeholder="Email" class="emailCreate" id="email">
-                <label class="emailLabel">Email</label>
-            </div>
-            
-            <div class="inputField registerPass">
-                <input type="password" placeholder="Password" class="passCreate" id="password">
-                <label class="passLabel">Password</label>
-                <div id="formMessage"></div>
+    
+            <div class="forgot">
+                <a href="Forgot.html">Forgot your password?</a>
             </div>
 
-            <div class="field button">
-                <button type="submit" class="btnCreate">Create</button>
-            </div>
+            <button type="submit" class="signIn btnSignIn">Sign in</button><br>
+            <a href="Register.html" class="signUp">Create account</a>
         </form>
     </div>
 
@@ -301,7 +295,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    
+
     <script>
         const header = document.querySelector("header"),
         searchIcon = document.querySelector("#searchIcon");
@@ -398,6 +392,13 @@
             })
         }
     </script>
+
 </body>
-    <script src="Login.js" defer></script> 
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+    </script>
+
+    <script src="Login.js" defer></script>
 </html>

@@ -37,7 +37,7 @@ body {
     font-weight: 400;
 }
 
-header {
+/* .header-wrapper{
     width: 1368px;
     background-color: blue;
     height: 90px;
@@ -48,6 +48,9 @@ header {
     box-sizing: border-box;
     transition: top 0.3s;
     z-index: 99;
+}
+.header-wrapper--hidden{
+    transform: translateY(-100px);
 }
 
 header.animate {
@@ -235,7 +238,7 @@ header.openSearch label {
 
 header .header-heading {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 8px;
     padding-left: 170px;
 } 
 
@@ -254,7 +257,7 @@ header .icon-right {
     align-items: center;
     justify-content: flex-end;
     margin-right: 38px;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
 header .icon-right .icon-search {
@@ -407,141 +410,218 @@ header .icon-right .icon-cart:hover {
 header.openSearch .icon-right .icon-cart {
     opacity: 0;
     pointer-events: auto;
-}
+} */
 
-.logInAccount {
-    margin-top: 165px;
+.registerAccount {
+    margin-top: 160px;
     text-align: center;
 }
 
-.logInAccount .logInAccount-head {
-    margin-bottom: 47px;
-}
-
-.logInAccount .logInAccount-head h1 {
-    font-family: "from_the_starsbold";
+.registerAccount .register-head h1 {
     font-size: 40px;
+    font-family: "from_the_starsbold";
+    margin-bottom: 45px;
 }
 
-.logInAccount .InputField {
-    position: relative;
-    margin-bottom: 15px;
+.registerAccount .errorSignUp {
+    font-family: "from_the_starsbold";
+    font-size: 20px;
+    margin-left: -120px;
+    margin-bottom: 30px;
 }
 
-.logInAccount .InputField .emailLogIn {
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
+.registerAccount .errorSignUp .please {
+    margin-left: -90px;
 }
 
-.logInAccount .InputField .emailLogIn:hover {
-    border-color: gray;
+.registerAccount .errorSignUp .please-two {
+    margin-left: -60px;
+    margin-top: 30px;
 }
 
-.logInAccount .InputField .emailLogIn::placeholder {
-    color: transparent;
+.registerAccount .errorSignUp .please i {
+    font-size: 5px;
 }
 
-.logInAccount .InputField .emailLabelLogIn {
-    position: absolute;
-    left: 480px;
-    top: 14px;
-    color: rgba(0, 0, 0, 0.692);
-    font-family: "barlow-regular"; 
-}
-
-.logInAccount .InputField .emailLogIn:focus + .emailLabelLogIn, 
-.logInAccount .InputField .emailLogIn:not(:placeholder-shown) + .emailLabelLogIn {
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.logInAccount .InputField {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.logInAccount .InputField .passLogIn {
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-}
-
-.logInAccount .InputField .passLogIn:hover {
-    border-color: gray;
-}
-
-.logInAccount .InputField .passLogIn::placeholder {
-    color: transparent;
-}
-
-.logInAccount .InputField .passLabelLogIn {
-    position: absolute;
-    left: 480px;
-    top: 14px;
-    color: rgba(0, 0, 0, 0.692);
-    font-family: "barlow-regular"; 
-}
-
-.logInAccount .InputField .passLogIn:focus + .passLabelLogIn, 
-.logInAccount .InputField .passLogIn:not(:placeholder-shown) + .passLabelLogIn {
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.logInAccount .forgot {
-    margin-left: -280px;
-    margin-bottom: 42px;
-}
-
-.logInAccount .forgot a{
-    color: rgba(0, 0, 0, 0.750);
-    font-family: "barlow-regular"; 
-    font-size: 15px;
-    transition: 0.2s ease;
+.registerAccount .errorSignUp .please a {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: black;
     text-decoration: none;
-    border-bottom: 1px solid  rgba(0, 0, 0, 0.750);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.699);
 }
 
-.logInAccount .forgot a:hover {
+.registerAccount .errorSignUp .please a:hover {
     border-bottom: 2px solid black;
 }
 
-.logInAccount button {
-    width: 118px;
-    height: 58px;
+.registerAccount .registerFirst {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .registerFirst .firstName{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.registerAccount .registerFirst .firstName::placeholder {
+    color: transparent;
+}
+
+.registerAccount .registerFirst .firstLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .registerFirst .firstName:focus + .firstLabel,
+.registerAccount .registerFirst .firstName:not(:placeholder-shown) + .firstLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .registerFirst .firstName:hover {
+    border-color: gray;
+}
+
+.registerAccount .registerLast {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .registerLast .lastName{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .registerLast .lastName::placeholder {
+    color: transparent;
+}
+
+.registerAccount .registerLast .lastLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .registerLast .lastName:focus + .lastLabel,
+.registerAccount .registerLast .lastName:not(:placeholder-shown) + .lastLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .registerLast .lastName:hover {
+    border-color: gray;
+}
+
+.registerAccount .inputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .inputField .emailCreate{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .inputField .emailCreate::placeholder {
+    color: transparent;
+}
+
+.registerAccount .inputField .emailLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .inputField .emailCreate:focus + .emailLabel,
+.registerAccount .inputField .emailCreate:not(:placeholder-shown) + .emailLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .inputField .emailCreate:hover {
+    border-color: gray;
+}
+
+.registerAccount .inputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .inputField .passCreate{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .inputField .passCreate::placeholder {
+    color: transparent;
+}
+
+.registerAccount .inputField .passLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .inputField .passCreate:focus + .passLabel,
+.registerAccount .inputField .passCreate:not(:placeholder-shown) + .passLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .inputField .passCreate:hover {
+    border-color: gray;
+}
+
+.registerAccount button {
+    margin-top: 30px;
+    width: 117px;
+    height: 57px;
     background-color: blue;
     border-radius: 6px;
     color: white;
-    text-transform: uppercase;
     font-family: "from_the_starsbold";
-    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s ease;
     cursor: pointer;
-    margin-bottom: 20px;
+    border: none;
+    margin-bottom: 105px;
 }
 
-.logInAccount button:hover {
+.registerAccount button:hover {
     transform: scale(1.05);
 }
 
-.logInAccount .signUp {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.74);
-    font-family: "barlow-regular"; 
-    transition: 0.3s ease;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.74);
-}
-
-.logInAccount .signUp:hover {
-    border-bottom: 2px solid black;
-}
-
-footer {
+/* footer {
     width: 1350px;
     height: 602px;
     background-color: rgba(0, 0, 0, 0.866);
@@ -693,4 +773,6 @@ footer .footer-two {
     font-size: 10px;
     text-align: center;
     margin-top: 42px;
-}
+} */
+
+

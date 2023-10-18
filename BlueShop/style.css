@@ -29,7 +29,7 @@ body {
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 100%;
     min-height: 100%;
-    /* font-size: 24px; */
+    font-size: 24px;
     letter-spacing: 0.06rem;
     line-height: 20px;
     font-family: "Nunito Sans", sans-serif;
@@ -38,7 +38,7 @@ body {
 }
 
 .header-wrapper{
-    width: 1368px;
+    width: 100%;
     background-color: blue;
     height: 90px;
     position: fixed;
@@ -216,8 +216,8 @@ header.openSearch label {
 }
 
 .side .side-log {
-    margin-top: 160px;
-    margin-left: 20px;
+    margin-top: 100px;
+    margin-left: 40px;
 }
 
 .side .side-log a {
@@ -412,97 +412,20 @@ header.openSearch .icon-right .icon-cart {
     pointer-events: auto;
 }
 
-.forgotPass {
-    margin-top: 165px;
-    text-align: center;
-}
 
-.forgotPass .resetPass {
-    margin-bottom: 30px;
-}
 
-.forgotPass .resetPass h1{
-    font-family: "from_the_starsbold";
-    font-size: 40px;
-}
 
-.forgotPass .resetPara {
-    color: rgba(0, 0, 0, 0.650);
-    font-family: "barlow-regular"; 
-    margin-bottom: 45px;
-}
 
-.forgotPass .resetEmail {
-    position: relative;
-    margin-bottom: 40px;
-}
 
-.forgotPass .resetEmail .emailReset{
-    width: 448px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-}
 
-.forgotPass .resetEmail .emailReset:hover {
-    border-color: gray;
-}
 
-.forgotPass .resetEmail .emailReset::placeholder {
-    color: transparent;
-}
 
-.forgotPass .resetEmail .emailLabelReset {
-    position: absolute;
-    left: 480px;
-    top: 14px;
-    color: rgba(0, 0, 0, 0.760);
-    font-family: "barlow-regular"; 
-}
-
-.forgotPass .resetEmail .emailReset:focus + .emailLabelReset, 
-.forgotPass .resetEmail .emailReset:not(:placeholder-shown) + .emailLabelReset {
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.forgotPass button {
-    width: 118px;
-    height: 58px;
-    background-color: blue;
-    font-family: "from_the_starsbold";
-    color: white;
-    text-transform: uppercase;
-    border-radius: 6px;
-    border: none;
-    letter-spacing: 2px;
-    margin-bottom: 18px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.forgotPass button:hover {
-    transform: scale(1.05);
-}
-
-.forgotPass .cancel {
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 13px;
-    font-family: "Nunito Sans", sans-serif;
-    transition: 0.2s ease;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.75);;
-}
-
-.forgotPass .cancel:hover {
-    border-bottom: 2px solid black;
-}
 
 footer {
-    width: 1350px;
+    width: 100%;
     height: 602px;
     background-color: rgba(0, 0, 0, 0.866);
-    margin-top: 140px;
+    margin-top: 75px;
 }
 
 footer .footer-first {
@@ -532,7 +455,7 @@ footer .footer-first .footer-links ul {
 }
 
 footer .footer-first .footer-links ul li {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 footer .footer-first .footer-links ul li a {
@@ -569,7 +492,6 @@ footer .footer-first .footer-between .between-email h6 {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 footer .footer-first .footer-between .between-email .between-form-email {
@@ -582,7 +504,7 @@ footer .footer-first .footer-between .between-email .between-form-email input {
     height: 44px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.678);
-    padding: 10px;
+    padding: 12px;
     color: white;
     transition: 0.2s ease;
 }
@@ -609,7 +531,7 @@ footer .footer-first .footer-between .between-email .between-form-email .email-l
 
 footer .footer-first .footer-between .between-form-email input:focus + .email-label,
 footer .footer-first .footer-between .between-form-email input:not(:placeholder-shown) + .email-label {
-    transform: translate(0, -8px);
+    transform: translate(0, -10px);
     font-size: 10px;
 }
 
@@ -626,13 +548,11 @@ footer .footer-first .footer-contact {
 }
 
 footer .footer-first .footer-contact .footer-para{
-    color: rgba(255, 255, 255, 0.695);
+    color: rgba(255, 255, 255, 0.795);
     width: 410px;
     height: 90px;
     font-family: "barlow-regular";
     font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 1px;
 }
 
 footer .footer-first .footer-contact a {

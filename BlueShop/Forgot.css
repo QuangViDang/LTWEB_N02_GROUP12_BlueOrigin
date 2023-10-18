@@ -37,7 +37,7 @@ body {
     font-weight: 400;
 }
 
-header {
+/* .header-wrapper{
     width: 1368px;
     background-color: blue;
     height: 90px;
@@ -48,6 +48,9 @@ header {
     box-sizing: border-box;
     transition: top 0.3s;
     z-index: 99;
+}
+.header-wrapper--hidden{
+    transform: translateY(-100px);
 }
 
 header.animate {
@@ -235,7 +238,7 @@ header.openSearch label {
 
 header .header-heading {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 8px;
     padding-left: 170px;
 } 
 
@@ -254,7 +257,7 @@ header .icon-right {
     align-items: center;
     justify-content: flex-end;
     margin-right: 38px;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
 header .icon-right .icon-search {
@@ -407,7 +410,7 @@ header .icon-right .icon-cart:hover {
 header.openSearch .icon-right .icon-cart {
     opacity: 0;
     pointer-events: auto;
-}
+} */
 
 .forgotPass {
     margin-top: 165px;
@@ -495,7 +498,7 @@ header.openSearch .icon-right .icon-cart {
     border-bottom: 2px solid black;
 }
 
-footer {
+/* footer {
     width: 1350px;
     height: 602px;
     background-color: rgba(0, 0, 0, 0.866);
@@ -647,4 +650,4 @@ footer .footer-two {
     font-size: 10px;
     text-align: center;
     margin-top: 42px;
-}
+} */

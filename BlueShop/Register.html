@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="//shop.blueorigin.com/cdn/shop/files/BlueOrigin-Favicon.png?crop=center&height=32&v=1666199468&width=32">
-    <link rel="stylesheet" href="Forgot.css">
-    <title>Account - Blue Twelve Shop</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account - Blue Twelve Shop</title>
 
     <link
         rel="stylesheet"
@@ -22,6 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
 </head>
 <body>
     <header>
@@ -233,17 +235,33 @@
         </div>
     </header>
 
-    <div class="forgotPass">
-        <div class="resetPass"><h1>Reset your password</h1></div>
-        <div class="resetPara">We will send you an email to reset your password</div>
-        <form onsubmit="forgot()">
-            <div id="forgotMessage"></div>
-            <div class="resetEmail">
-                <input type="email" placeholder="Email" class="emailReset" id="email">
-                <label class="emailLabelReset">Email</label>
+    <div class="registerAccount">
+        <div class="register-head"><h1>Create account</h1></div>
+        <form onsubmit="register()">
+            <div class="registerFirst">
+                <input type="text" placeholder="First name" class="firstName" id="firstname">
+                <label class="firstLabel">First name</label>
             </div>
-            <button type="submit" class="reset btnReset">Submit</button><br>
-            <a href="LogIn.html" class="cancel">Cancel</a>
+    
+            <div class="registerLast">
+                <input type="text" placeholder="Last name" class="lastName" id="lastname">
+                <label class="lastLabel">Last name</label>
+            </div>
+            
+            <div class="inputField registerEmail">
+                <input type="email" placeholder="Email" class="emailCreate" id="email">
+                <label class="emailLabel">Email</label>
+            </div>
+            
+            <div class="inputField registerPass">
+                <input type="password" placeholder="Password" class="passCreate" id="password">
+                <label class="passLabel">Password</label>
+                <div id="formMessage"></div>
+            </div>
+
+            <div class="field button">
+                <button type="submit" class="btnCreate">Create</button>
+            </div>
         </form>
     </div>
 
@@ -284,7 +302,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
+    
     <script>
         const header = document.querySelector("header"),
         searchIcon = document.querySelector("#searchIcon");

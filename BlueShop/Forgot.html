@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="//shop.blueorigin.com/cdn/shop/files/BlueOrigin-Favicon.png?crop=center&height=32&v=1666199468&width=32">
     <link rel="stylesheet" href="Forgot.css">
+    <link rel="stylesheet" href="style.css">
     <title>Account - Blue Twelve Shop</title>
 
     <link
@@ -262,7 +263,7 @@
             </div>
 
             <div class="footer-between">
-                <img src="imageShop/fluffy.png" alt="">
+                <img src="../imageShop/fluffy.png" alt="">
                 <div class="between-email">
                     <h6>Sign up and save</h6>
                     <div class="between-form-email">
@@ -364,6 +365,22 @@
 
         console.log(menuItemsTwo , subMenuTitlesTwo);
 
+    </script>
+
+    <script>
+        {
+            const header = document.querySelector(".header-wrapper");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY){
+                    header.classList.add("header-wrapper--hidden");
+                }else{
+                    header.classList.remove("header-wrapper--hidden");
+                }
+                lastScrollY = window.scrollY; 
+            })
+        }
     </script>
 </body>
     <script src="Login.js" defer></script> 

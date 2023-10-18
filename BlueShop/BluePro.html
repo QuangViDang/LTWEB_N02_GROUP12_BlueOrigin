@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="BluePro.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="//shop.blueorigin.com/cdn/shop/files/BlueOrigin-Favicon.png?crop=center&height=32&v=1666199468&width=32">
     <title>Featured Products Top - Blue Twelve</title>
 
@@ -159,7 +160,7 @@
                         <li class="sideItems"><a href="BluePro.html">Clearance</a></li> 
                     </ul>
                     <div class="side-log">
-                        <a href=""><i class="fa-light fa-user log-user"></i>Log in</a>
+                        <a href="LogIn.html"><i class="fa-light fa-user log-user"></i>Log in</a>
                     </div>
                 </div>
             </label>
@@ -227,7 +228,7 @@
                     </ul>
                 </div>
                 
-                <a href="">
+                <a href="LogIn.html">
                     <i class="fa-light fa-user icon-user"></i>
                 </a>
 
@@ -337,7 +338,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -380,7 +381,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/madeUS.png" alt="">
+                                    <img src="../imageShop/madeUS.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -461,7 +462,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -478,7 +479,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -495,7 +496,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -514,7 +515,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -543,7 +544,7 @@
                             </a>
                             <div class="product-img-detail">
                                 <a href="">
-                                    <img src="imageShop/eco-icon.png" alt="">
+                                    <img src="../imageShop/eco-icon.png" alt="">
                                 </a>
                             </div>
                             <div class="product-name">
@@ -572,7 +573,7 @@
             </div>
 
             <div class="footer-between">
-                <img src="imageShop/fluffy.png" alt="">
+                <img src="../imageShop/fluffy.png" alt="">
                 <div class="between-email">
                     <h6>Sign up and save</h6>
                     <div class="between-form-email">
@@ -686,6 +687,22 @@
             }
             searchIcon.classList.replace("fa-times", "fa-magnifying-glass");
         });
+    </script>
+
+    <script>
+        {
+            const header = document.querySelector(".header-wrapper");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY){
+                    header.classList.add("header-wrapper--hidden");
+                }else{
+                    header.classList.remove("header-wrapper--hidden");
+                }
+                lastScrollY = window.scrollY; 
+            })
+        }
     </script>
 
 </body>

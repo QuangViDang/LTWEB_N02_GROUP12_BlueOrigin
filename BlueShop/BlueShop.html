@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ProductCart.css">
     <link rel="icon" type="image/png" href="//shop.blueorigin.com/cdn/shop/files/BlueOrigin-Favicon.png?crop=center&height=32&v=1666199468&width=32">
-    <title>Club For the Future Pin - Blue Twelve</title>
-
+    <link rel="stylesheet" href="BlueShop.css">
+    <link rel="stylesheet" href="style.css">
+    
     <link
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
@@ -29,6 +29,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Blue Twelve Shop</title>
 </head>
 <body>
     <header>
@@ -230,7 +232,7 @@
                 <a href="LogIn.html">
                     <i class="fa-light fa-user icon-user"></i>
                 </a>
-                
+
                 <a href="Cart.html">
                     <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
                         <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"></path>
@@ -240,30 +242,83 @@
         </div>
     </header>
 
-    <div class="future">
-        <div class="future-image">
-            <img src="//shop.blueorigin.com/cdn/shop/products/club-for-the-future-pin-803509.png?v=1665438277&width=1946" alt="">
-        </div>
-
-        <div class="future-content">
-            <div class="future-one">BLUE ORIGIN SHOP</div>
-            <div class="future-two"><h1>Club For the Future Pin</h1></div>
-            <div class="future-three">$5.00</div>
-            <label class="quantity">Quantity</label>
-            <div class="future-four">
-                <span class="minus">-</span>
-                <span class="num">1</span>
-                <span class="plus">+</span>
+    <div class="slidershow">
+        <div class="slides">
+            <div class="slide item">
+                <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-Banner9_99e4041b-5b28-4625-8849-8f6af83d4b5a.jpg?v=1695182739&width=1500" alt="">
+                <div class="slide-first">
+                    <h2 class="banner-word">Fresh Fall arrivals now available</h2>
+                    <a href="BluePro.html" class="banner-button">shop now</a>
+                </div>
             </div>
-            <div class="add-cart"><a href="">Add to cart</a></div>
-            <div class="future-five">Metal pin featuring Club For The Future Shield. This product is sold by Club For The Future. Thank you for supporting the Club to inspire the next generation!</div>
-            <div class="future-six">Note: No proceeds are paid to Blue Origin</div>
+
+            <div class="slide">
+                <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-Banner6.jpg?v=1695055001&width=1500" alt="">
+                <div class="slide-first">
+                    <h2 class="banner-word">Brand New Women's Styles now available</h2>
+                    <a href="BluePro.html" class="banner-button">shop now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-Banner2.jpg?v=1695055038&width=1500" alt="">
+                <div class="slide-first">
+                    <h2 class="banner-word">Shop Latest Men's Styles</h2>
+                    <a href="BluePro.html" class="banner-button">shop now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="//shop.blueorigin.com/cdn/shop/files/banner-estes.jpg?v=1693930966&width=1500" alt="" id="banner-last">
+                <div class="slide-first">
+                    <h2 class="banner-word">Shop Estes New Shepard Builder Kit</h2>
+                    <a href="BluePro.html" class="banner-button color">shop now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slideshow-control">
+
+            <button type="button" class="button-cart">
+                <svg class="previous" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+            <div class="slide-count">
+                <span class="count" id="one">1</span>
+                <span class="count">/</span>
+                <span class="count" id="four">4</span>
+            </div>
+    
+            <button type="button" class="button-cart">
+                <svg class="next" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
     </div>
 
-    <div class="section-future">
-        <div class="section-future-head"><h1>You may also like</h1></div>
-        <div class="section-future-content">
+    <div class="products">
+        <div class="products-head"><h3>featured products</h3></div>
+        <div class="products-item">
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/files/MicrosoftTeams-image_18.jpg?v=1694801676&width=533" class="pro-thumb" alt="">
+                    </a>
+                    <div class="product-img-detail">
+                        <a href="ProductCart.html">
+                            <img src="../imageShop/eco-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-name">
+                        <a href="ProductCart.html">New Shepard Rocket Elements Tee</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$29.95</a></div>
+            </div>
+    
             <div class="products-image">
                 <div class="product-img">
                     <a href="ProductCart.html">
@@ -273,21 +328,38 @@
                         <a href="ProductCart.html">Blue Origin Long Sleeve Tee</a>
                     </div>
                 </div>
-                <div class="product-price">$22.95</div>
+                <div class="product-price"><a href="ProductCart.html">$22.95</a></div>
             </div>
-
+    
             <div class="products-image">
                 <div class="product-img">
                     <a href="ProductCart.html">
                         <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-CroppedTieDyeHoodie.jpg?v=1694793574&width=533" class="pro-thumb" alt="">
                     </a>
                     <div class="product-name">
-                        <a href="ProductCart.html">Women's Cropped Tie-Dye</a>
+                        <a href="ProductCart.html">Women's Cropped Tie-Dye Hoodie</a>
                     </div>
                 </div>
-                <div class="product-price">$54.95</div>
+                <div class="product-price"><a href="ProductCart.html">$54.95</a></div>
             </div>
-
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-LightweightHoodie.jpg?v=1694799946&width=533" class="pro-thumb" alt="">
+                    </a>
+                    <div class="product-img-detail">
+                        <a href="ProductCart.html">
+                            <img src="../imageShop/madeUS.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Lightweight Hoodie</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$34.95</a></div>
+            </div>
+    
             <div class="products-image">
                 <div class="product-img">
                     <a href="ProductCart.html">
@@ -297,9 +369,9 @@
                         <a href="ProductCart.html">Men's Apex Pullover</a>
                     </div>
                 </div>
-                <div class="product-price">$82.95</div>
+                <div class="product-price"><a href="ProductCart.html">$82.95</a></div>
             </div>
-
+    
             <div class="products-image">
                 <div class="product-img">
                     <a href="ProductCart.html">
@@ -309,12 +381,215 @@
                         <a href="ProductCart.html">Lightweight Raglan Hoodie</a>
                     </div>
                 </div>
-                <div class="product-price">$44.95</div>
+                <div class="product-price"><a href="ProductCart.html">$44.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-MensRainSlicker.jpg?v=1694795665&width=533" class="pro-thumb" alt="">
+                    </a>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Men's Slicker Rain Jacket</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$79.95</a></div>
+            </div>
+        </div>
+
+        <div class="slideshow-control second">
+            <button type="button" class="button-cart">
+                <svg class="previous" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+            <div class="slide-count">
+                <span class="count" id="one">1</span>
+                <span class="count">/</span>
+                <span class="count" id="four">4</span>
+            </div>
+    
+            <button type="button" class="button-cart">
+                <svg class="next" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="view">
+            <a href="BluePro.html">View all</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-item">
+            <img src="//shop.blueorigin.com/cdn/shop/files/home-new-shepard-hero.jpg?v=1665597721&width=1500" alt="">
+            <div class="section-content">
+                <h2 class="section-word">New Shepard</h2>
+                <p class="section-row">Explore our catalog of New Shepard apparel and accessories</p>
+                <a href="BluePro.html" class="section-button">shop now</a>
             </div>
         </div>
     </div>
 
+    <div class="aside">
+        <div class="aside-head"><h3>spotlight products</h3></div>
+        <div class="aside-introduce">
+            <div class="introduce-pro">
+                <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-BlueHeatherFullZip-Back_2d19d1ea-9505-44d7-8e43-e2eafbad8f6c.jpg?v=1695055379&width=550" alt="">
+                <div class="introduce-content">
+                    <h4 class="introduce-head">BLUE Heather Full Zip</h4>
+                    <p class="introduce-para">Soft, light grey full-zip hoodie with feather woven tag on left hip. 80% ringspun Cotton/20% polyester, and distressed graphics on back. Gender beutral fit.</p>
+                    <a href="ProductCart.html" class="introduce-button">Shop now</a>
+                    <a href="ProductCart.html" class="introduce-arrow"><i class="fa-light fa-arrow-right arrows"></i></a>
+                </div>
+            </div>
+
+            <div class="introduce-pro">
+                <img src="//shop.blueorigin.com/cdn/shop/files/2023Fall-RocketFuelMug-Front_34c4f0de-5dfe-4ea3-9b1f-181d6d9df088.jpg?v=1695055378&width=550" alt="">
+                <div class="introduce-content">
+                    <h4 class="introduce-head">14oz Rocket Fuel Mug</h4>
+                    <p class="introduce-para">14oz tall black mug with Rocket Fuel graphics. Handwash recommended.</p>
+                    <a href="ProductCart.html" class="introduce-button">Shop now</a>
+                    <a href="ProductCart.html" class="introduce-arrow"><i class="fa-light fa-arrow-right arrows"></i></a>
+                </div>
+            </div>
+
+            <div class="introduce-pro">
+                <img src="//shop.blueorigin.com/cdn/shop/files/MicrosoftTeams-image_14.webp?v=1695055390&width=550" alt="">
+                <div class="introduce-content">
+                    <h4 class="introduce-head">Engine Trucker Hat</h4>
+                    <p class="introduce-para">Structured, 5-panel, mid-profile trucker hat with For the Benefit of Earth raised patch on front, and Engine graphich imprint under visor. Made with partial recycled materials and an adjustable snapback closure.</p>
+                    <a href="ProductCart.html" class="introduce-button">Shop now</a>
+                    <a href="ProductCart.html" class="introduce-arrow"><i class="fa-light fa-arrow-right arrows"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="products-head"><h3>fan favorites</h3></div>
+        <div class="products-item">
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/23Spring-177-LeatherPatchHat-front.jpg?v=1681225834&width=533" alt="">
+                    </a>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Leather Patch Trucker Hat</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$18.95</a></div>
+            </div>
     
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/wordmark-Gildan_5000_Heather_Military_Green_Front_High_1.jpg?v=1675447916&width=533" alt="">
+                    </a>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Logo Tee</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$14.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/blue-origin-engine-sweatshirt-111572.jpg?v=1665438272&width=533" alt="">
+                    </a>
+                    <div class="product-img-detail">
+                        <a href="ProductCart.html">
+                            <img src="../imageShop/eco-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Blue Origin Engine Sweatshirt</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$66.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/20oz-matte-black-tumbler-573605.jpg?v=1665431236&width=533" alt="">
+                    </a>
+                    <div class="product-img-detail">
+                        <a href="ProductCart.html">
+                            <img src="../imageShop/eco-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-name">
+                        <a href="ProductCart.html">20oz Matte Black Tumbler</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$29.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/mens-blue-feather-logo-tee-946642.jpg?v=1671124088&width=533" alt="">
+                    </a>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Men's Blue Feather Logo Tee</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$21.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/womens-wild-feather-tee-925442.webp?v=1679951388&width=533" alt="">
+                    </a>
+                    <div class="product-img-detail">
+                        <a href="ProductCart.html">
+                            <img src="../imageShop/eco-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Women's Wild Feather Tee</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$24.95</a></div>
+            </div>
+    
+            <div class="products-image">
+                <div class="product-img">
+                    <a href="ProductCart.html">
+                        <img src="//shop.blueorigin.com/cdn/shop/products/black-polo-993098.jpg?v=1671124079&width=533" alt="">
+                    </a>
+                    <div class="product-name">
+                        <a href="ProductCart.html">Men's Black Polo</a>
+                    </div>
+                </div>
+                <div class="product-price"><a href="ProductCart.html">$35.95</a></div>
+            </div>
+        </div>
+
+        <div class="slideshow-control second">
+            <button type="button" class="button-cart">
+                <svg class="previous" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+            <div class="slide-count">
+                <span class="count" id="one">1</span>
+                <span class="count">/</span>
+                <span class="count" id="four">4</span>
+            </div>
+    
+            <button type="button" class="button-cart">
+                <svg class="next" viewBox="0 0 10 6">
+                    <path d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-first">
@@ -331,7 +606,7 @@
             </div>
 
             <div class="footer-between">
-                <img src="imageShop/fluffy.png" alt="">
+                <img src="../imageShop/fluffy.png" alt="">
                 <div class="between-email">
                     <h6>Sign up and save</h6>
                     <div class="between-form-email">
@@ -352,55 +627,62 @@
         </div>
     </footer>
 
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script>
-        $('.buttonBars').click(function(){
-            $(this).toggleClass("click");
-            $('.side').toggleClass("show");
-        });
+        {
+            const header = document.querySelector(".header-wrapper");
+            let lastScrollY = window.scrollY;
 
-        const menu = document.querySelector(".side");
-        const menuItems = document.querySelectorAll(".accessories");
-        const subMenuTitles = document.querySelectorAll(".submenuAcc .accessoriesTwo");
-        menuItems.forEach((item, index) => {
-            item.addEventListener("click", () => {
-                menu.classList.add("submenuActive");
-                item.classList.add("showSubMenu");
-                menuItems.forEach((item2, index2) => {
-                    if(index !== index2) {
-                        item2.classList.remove("showSubMenu");
-                    }
-                });
-            });
-        });
-        subMenuTitles.forEach((title) => {
-            title.addEventListener("click", () => {
-                menu.classList.remove("submenuActive");
-            });
-        });
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY){
+                    header.classList.add("header-wrapper--hidden");
+                }else{
+                    header.classList.remove("header-wrapper--hidden");
+                }
+                lastScrollY = window.scrollY; 
+            })
+        }
+    </script>
 
-        const menuTwo = document.querySelector("#apparelBoth");
-        const menuItemsTwo = document.querySelectorAll(".apparelMens");
-        const subMenuTitlesTwo = document.querySelectorAll(".submenuMens .mens");
-        menuItemsTwo.forEach((item3, index3) => {
-            item3.addEventListener("click", () => {
-                menuTwo.classList.add("submenuActiveTwo");
-                item3.classList.add("showSubMenuTwo");
-                menuItemsTwo.forEach((item4, index4) => {
-                    if(index3 !== index4) {
-                        item4.classList.remove("showSubMenuTwo");
-                    }
-                });
-            });
-        });
-        subMenuTitlesTwo.forEach((title) => {
-            title.addEventListener("click", () => {
-                menuTwo.classList.remove("submenuActiveTwo");
-            });
-        });
+    <script type="text/javascript">
+        var slideItem = document.querySelector('.slides').children
+        var slideLength = slideItem.length
+        var nextBtn = document.querySelector('.next')
+        var prevBtn = document.querySelector('.previous')
+        var number = document.querySelector('#one')
+        var index = 0
 
+        nextBtn.onclick = function(){
+            handleChangeImage('next')
+        }
+        prevBtn.onclick = function(){
+            handleChangeImage('previous')
+        }
+
+        function handleChangeImage(direction) {
+            if(direction == 'next'){
+                index++
+                if(index == slideLength){
+                    index = 0;
+                }
+                number.innerHTML = index + 1
+            }else {
+                index--
+                if(index < 0) {
+                    index = slideLength - 1
+                }
+                number.innerHTML = index + 1
+            }
+            for(var i = 0; i < slideLength; i++){
+                slideItem[i].classList.remove('item')
+            }
+            slideItem[index].classList.add('item')
+        }
     </script>
 
     <script>
@@ -428,29 +710,63 @@
                 }else {
                     el.style.display = "none";
                 }
-            })
+            });
         }
     </script>
 
     <script>
-        const plus = document.querySelector(".plus");
-        minus = document.querySelector(".minus");
-        num = document.querySelector(".num");
-        let a = 1;
-        plus.addEventListener("click", () => {
-            a++;
-            a = (a < 10) ? + a : a;
-            num.innerText = a;
-            console.log(a);
+        $('.buttonBars').click(function(){
+            $(this).toggleClass("click");
+            $('.side').toggleClass("show");
         });
 
-        minus.addEventListener("click", () => {
-            if(a > 1) {
-                a--;
-                a = (a < 10) ? + a : a;
-                num.innerText = a;
-            }
+        const menu = document.querySelector(".side");
+        const menuItems = document.querySelectorAll(".accessories");
+        const subMenuTitles = document.querySelectorAll(".submenuAcc .accessoriesTwo");
+        menuItems.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                menu.classList.add("submenuActive");
+                item.classList.add("showSubMenu");
+                menuItems.forEach((item2, index2) => {
+                    if(index !== index2) {
+                        item2.classList.remove("showSubMenu");
+                    }
+                });
+            });
         });
+        subMenuTitles.forEach((title) => {
+            title.addEventListener("click", () => {
+                menu.classList.remove("submenuActive");
+            });
+        });
+
+        console.log(menuItems, subMenuTitles);
+
+        const menuTwo = document.querySelector("#apparelBoth");
+        const menuItemsTwo = document.querySelectorAll(".apparelMens");
+        const subMenuTitlesTwo = document.querySelectorAll(".submenuMens .mens");
+        menuItemsTwo.forEach((item3, index3) => {
+            item3.addEventListener("click", () => {
+                menuTwo.classList.add("submenuActiveTwo");
+                item3.classList.add("showSubMenuTwo");
+                menuItemsTwo.forEach((item4, index4) => {
+                    if(index3 !== index4) {
+                        item4.classList.remove("showSubMenuTwo");
+                    }
+                });
+            });
+        });
+        subMenuTitlesTwo.forEach((title) => {
+            title.addEventListener("click", () => {
+                menuTwo.classList.remove("submenuActiveTwo");
+            });
+        });
+
+        console.log(menuItemsTwo , subMenuTitlesTwo);
+
     </script>
+
 </body>
 </html>
+
+

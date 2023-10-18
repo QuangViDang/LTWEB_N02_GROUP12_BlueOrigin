@@ -29,7 +29,7 @@ body {
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 100%;
     min-height: 100%;
-    /* font-size: 24px; */
+    font-size: 24px;
     letter-spacing: 0.06rem;
     line-height: 20px;
     font-family: "Nunito Sans", sans-serif;
@@ -37,7 +37,7 @@ body {
     font-weight: 400;
 }
 
-.header-wrapper{
+/* .header-wrapper{
     width: 1368px;
     background-color: blue;
     height: 90px;
@@ -216,8 +216,8 @@ header.openSearch label {
 }
 
 .side .side-log {
-    margin-top: 160px;
-    margin-left: 20px;
+    margin-top: 100px;
+    margin-left: 40px;
 }
 
 .side .side-log a {
@@ -410,218 +410,368 @@ header .icon-right .icon-cart:hover {
 header.openSearch .icon-right .icon-cart {
     opacity: 0;
     pointer-events: auto;
+} */
+
+.slidershow .slides {
+    display: flex;
+    margin-top: 90px;
 }
 
-.registerAccount {
-    margin-top: 160px;
+.slidershow .slide {
+    position: relative;
+    display: none;
+}
+
+.slidershow .slide.item {
+    display: block;
+}
+
+.slidershow .slide img {
+    width: 100%;
+    height: 670px;
+    filter: brightness(0.5);
+}
+
+.slidershow .slide img#banner-last {
+    filter: none;
+}
+
+.slidershow .slide .slide-first {
+    width: 720px;
+    height: 280px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.slidershow .slide .slide-first .banner-word {
+    color: white;
+    font-size: 450%;
+    font-family: "from_the_starsbold";
+    margin-bottom: 28px;
+}
+
+.slidershow .slide .slide-first a.banner-button {
+    text-decoration: none;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "from_the_starsbold";
+}
+
+.slidershow .slide .slide-first .banner-button {
+    padding: 21px 27px;
+}
+
+.slidershow .slide .slide-first .banner-button:hover {
+    background-color: white;
+    color: blue;
+}
+
+.slidershow .slide .slide-first .banner-button.color {
+    border: 1px solid white;
+}
+
+.slideshow-control {
+    width: 100%;
+    height: 45px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-control .button-cart {
+    width: 20px;
+    background-color: blue;
+    border: none;
+    margin: 0 20px;
+}
+
+.slideshow-control .previous {
+    rotate: 90deg;
+    height: 8px;
+    color: white;
+}
+
+.slideshow-control .slide-count .count {
+    color: white;
+    font-size: 12px;
+}
+
+.slideshow-control .next {
+    rotate: -90deg;
+    height: 8px;
+    color: white;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.products .products-head {
+    margin-left: 50px;
+    margin-top: 31px;
+}
+
+.products .products-head h3 {
+    text-transform: uppercase;
+    font-family: "from_the_starsbold";
+    font-size: 23px;
+}
+
+.products .products-item {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.products .products-item::-webkit-scrollbar {
+    display: none;
+}
+
+.products .products-image {
+    flex: 0 0 auto;
+    width: 307px;
+    height: 472px;
+    border: 1px solid gainsboro;
+    margin-left: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.products .products-image .product-img{
+    position: relative;
+}
+
+.products .products-image .product-img:hover {
+    text-decoration: underline;
+}
+
+.products .products-image .product-img img {
+    width: 100%;
+    height: 300px;
+    transition: 0.8s ease-in-out;
+}
+
+.products .products-image .product-img img:hover{
+    transform: scale(1.08);
+}
+
+.products .products-image .product-img .product-img-detail {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.products .products-image .product-img .product-img-detail img {
+    height: 45px;
+    width: 50px;
+}
+
+.products .products-image .product-name {
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.products .products-image .product-name a {
+    font-family: "from_the_starsbold";
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.products .products-image .product-price {
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.products .products-image .product-price a {
+    font-family: "barlow-regular";
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.products .second {
+    background-color: white;
+    margin-top: 30px;
+}
+
+.products .second .button-cart {
+    width: 20px;
+    background-color: white;
+    border: none;
+    margin: 0 20px;
+}
+
+.products .second .previous {
+    rotate: 90deg;
+    height: 8px;
+    color: gray;
+}
+
+.products .second .slide-count .count {
+    color: gray;
+    font-size: 12px;
+}
+
+.products .second .next {
+    rotate: -90deg;
+    height: 8px;
+    color: gray;
+}
+
+.products .view {
     text-align: center;
 }
 
-.registerAccount .register-head h1 {
-    font-size: 40px;
-    font-family: "from_the_starsbold";
-    margin-bottom: 45px;
-}
-
-.registerAccount .errorSignUp {
-    font-family: "from_the_starsbold";
-    font-size: 20px;
-    margin-left: -120px;
-    margin-bottom: 30px;
-}
-
-.registerAccount .errorSignUp .please {
-    margin-left: -90px;
-}
-
-.registerAccount .errorSignUp .please-two {
-    margin-left: -60px;
-    margin-top: 30px;
-}
-
-.registerAccount .errorSignUp .please i {
-    font-size: 5px;
-}
-
-.registerAccount .errorSignUp .please a {
-    font-family: "Nunito Sans", sans-serif;
+.products .view a {
+    color: gray;
     font-size: 14px;
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.699);
 }
 
-.registerAccount .errorSignUp .please a:hover {
-    border-bottom: 2px solid black;
+.products .view a:hover {
+    color: rgba(0, 0, 0, 0.729);
+    font-weight: 600;
 }
 
-.registerAccount .registerFirst {
+.section {
+    margin-top: 35px;
+}
+
+.section .section-item {
     position: relative;
-    margin-bottom: 15px;
 }
 
-.registerAccount .registerFirst .firstName{
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-    color: rgba(0, 0, 0, 0.75);
+.section .section-item img {
+    width: 100%;
 }
 
-.registerAccount .registerFirst .firstName::placeholder {
-    color: transparent;
-}
-
-.registerAccount .registerFirst .firstLabel {
+.section .section-item .section-content {
+    width: 720px;
+    height: 280px;
     position: absolute;
-    left: calc(100% - 900px);
-    top: 14px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.651);
-    font-family: "barlow-regular"; 
-    padding: 0 12px;
+    top: 200px;
+    left: 100px;
 }
 
-.registerAccount .registerFirst .firstName:focus + .firstLabel,
-.registerAccount .registerFirst .firstName:not(:placeholder-shown) + .firstLabel{
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.registerAccount .registerFirst .firstName:hover {
-    border-color: gray;
-}
-
-.registerAccount .registerLast {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.registerAccount .registerLast .lastName{
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-}
-
-.registerAccount .registerLast .lastName::placeholder {
-    color: transparent;
-}
-
-.registerAccount .registerLast .lastLabel {
-    position: absolute;
-    left: calc(100% - 900px);
-    top: 14px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.651);
-    font-family: "barlow-regular"; 
-    padding: 0 12px;
-}
-
-.registerAccount .registerLast .lastName:focus + .lastLabel,
-.registerAccount .registerLast .lastName:not(:placeholder-shown) + .lastLabel{
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.registerAccount .registerLast .lastName:hover {
-    border-color: gray;
-}
-
-.registerAccount .inputField {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.registerAccount .inputField .emailCreate{
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-}
-
-.registerAccount .inputField .emailCreate::placeholder {
-    color: transparent;
-}
-
-.registerAccount .inputField .emailLabel {
-    position: absolute;
-    left: calc(100% - 900px);
-    top: 14px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.651);
-    font-family: "barlow-regular"; 
-    padding: 0 12px;
-}
-
-.registerAccount .inputField .emailCreate:focus + .emailLabel,
-.registerAccount .inputField .emailCreate:not(:placeholder-shown) + .emailLabel{
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.registerAccount .inputField .emailCreate:hover {
-    border-color: gray;
-}
-
-.registerAccount .inputField {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.registerAccount .inputField .passCreate{
-    width: 446px;
-    height: 48px;
-    padding: 10px 14px;
-    transition: 0.3s ease;
-}
-
-.registerAccount .inputField .passCreate::placeholder {
-    color: transparent;
-}
-
-.registerAccount .inputField .passLabel {
-    position: absolute;
-    left: calc(100% - 900px);
-    top: 14px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.651);
-    font-family: "barlow-regular"; 
-    padding: 0 12px;
-}
-
-.registerAccount .inputField .passCreate:focus + .passLabel,
-.registerAccount .inputField .passCreate:not(:placeholder-shown) + .passLabel{
-    transform: translate(0, -10px);
-    font-size: 10px;
-}
-
-.registerAccount .inputField .passCreate:hover {
-    border-color: gray;
-}
-
-.registerAccount button {
-    margin-top: 30px;
-    width: 117px;
-    height: 57px;
-    background-color: blue;
-    border-radius: 6px;
+.section .section-item .section-content .section-word {
     color: white;
+    font-size: 450%;
     font-family: "from_the_starsbold";
-    font-size: 13px;
+}
+
+.section .section-item .section-content p {
+    color: white;
+    font-family: "barlow-regular";
+}
+
+.section .section-item .section-content .section-row {
+    margin-bottom: 40px;
+}
+
+.section .section-item .section-content a.section-button {
+    text-decoration: none;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.3s ease;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 105px;
+    font-size: 13px;
+    font-family: "from_the_starsbold";
 }
 
-.registerAccount button:hover {
-    transform: scale(1.05);
+.section .section-item .section-content .section-button {
+    padding: 21px 27px;
 }
 
-footer {
+.section .section-item .section-content .section-button:hover {
+    background-color: white;
+    color: blue;
+}
+
+.section .section-item .section-content .section-button.color {
+    border: 1px solid white;
+}
+
+.aside {
+    width: 100%;
+    height: 860px;
+    background-color: blue;
+}
+
+.aside .aside-head {
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.aside .aside-head h3 {
+    text-transform: uppercase;
+    font-family: "from_the_starsbold";
+    font-size: 23px;
+    color: white;
+}
+
+.aside .aside-introduce {
+    display: flex;
+    padding: 0 50px;
+}
+
+.aside .introduce-pro {
+    margin-right: 16px;
+    margin-top: 38px;
+    width: 404px;
+    height: 662px;
+    border: 1px solid rgba(173, 216, 230, 0.242);
+}
+
+.aside .introduce-pro img {
+    width: 401px;
+    height: 402px;
+}
+
+.aside .introduce-pro .introduce-content {
+    padding: 30px 12px;
+}
+
+.aside .introduce-pro .introduce-content .introduce-head {
+    font-size: 18px;
+    font-family: "from_the_starsbold";
+    color: white;
+}
+
+.aside .introduce-pro .introduce-content .introduce-para {
+    width: 372px;
+    font-family: "barlow-regular";
+    color: rgba(220, 220, 220, 0.781);
+}
+
+.aside .introduce-pro .introduce-content .introduce-button {
+    text-decoration: none;
+    font-family: "from_the_starsbold";
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.aside .introduce-pro .introduce-content .introduce-arrow {
+    color: white;
+    margin-left: 8px;
+    font-size: 13px;
+    transition: 0.3s ease-in-out;
+}
+
+.aside .introduce-pro .introduce-content .introduce-arrow .arrows:hover {
+    transform: scaleX(1.2);
+}
+
+/* footer {
     width: 1350px;
     height: 602px;
     background-color: rgba(0, 0, 0, 0.866);
@@ -655,7 +805,7 @@ footer .footer-first .footer-links ul {
 }
 
 footer .footer-first .footer-links ul li {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 footer .footer-first .footer-links ul li a {
@@ -692,7 +842,6 @@ footer .footer-first .footer-between .between-email h6 {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 footer .footer-first .footer-between .between-email .between-form-email {
@@ -705,7 +854,7 @@ footer .footer-first .footer-between .between-email .between-form-email input {
     height: 44px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.678);
-    padding: 10px;
+    padding: 12px;
     color: white;
     transition: 0.2s ease;
 }
@@ -732,7 +881,7 @@ footer .footer-first .footer-between .between-email .between-form-email .email-l
 
 footer .footer-first .footer-between .between-form-email input:focus + .email-label,
 footer .footer-first .footer-between .between-form-email input:not(:placeholder-shown) + .email-label {
-    transform: translate(0, -8px);
+    transform: translate(0, -10px);
     font-size: 10px;
 }
 
@@ -749,13 +898,11 @@ footer .footer-first .footer-contact {
 }
 
 footer .footer-first .footer-contact .footer-para{
-    color: rgba(255, 255, 255, 0.695);
+    color: rgba(255, 255, 255, 0.795);
     width: 410px;
     height: 90px;
     font-family: "barlow-regular";
     font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 1px;
 }
 
 footer .footer-first .footer-contact a {
@@ -773,6 +920,4 @@ footer .footer-two {
     font-size: 10px;
     text-align: center;
     margin-top: 42px;
-}
-
-
+} */

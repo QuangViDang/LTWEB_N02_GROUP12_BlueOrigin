@@ -29,7 +29,7 @@ body {
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 100%;
     min-height: 100%;
-    font-size: 24px;
+    /* font-size: 24px; */
     letter-spacing: 0.06rem;
     line-height: 20px;
     font-family: "Nunito Sans", sans-serif;
@@ -37,7 +37,7 @@ body {
     font-weight: 400;
 }
 
-header {
+/* .header-wrapper{
     width: 1368px;
     background-color: blue;
     height: 90px;
@@ -48,6 +48,9 @@ header {
     box-sizing: border-box;
     transition: top 0.3s;
     z-index: 99;
+}
+.header-wrapper--hidden{
+    transform: translateY(-100px);
 }
 
 header.animate {
@@ -69,127 +72,152 @@ header.openSearch label {
     pointer-events: auto;
 }
 
-label input {
-    display: none;
-    visibility: hidden;
-}
-
-label .toggle {
+.buttonBars {
     position: absolute;
-    height: 30px;
-    width: 30px;
-    z-index: 1;
-    left: 50px;
-    top: 30px;
+    top: 35px;
+    left: 55px;
     cursor: pointer;
-}
-
-label .toggle .common {
-    position: absolute;
-    height: 1px;
-    width: 18px;
-    background-color: white;
-    border-radius: 50px;
+    z-index: 88;
+    width: 40px;
+    height: 40px;
+    text-align: center;
     transition: 0.3s ease;
 }
 
-label .toggle .top-line {
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.buttonBars.click {
+    left: 55px;
 }
 
-label .toggle .middle-line {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.buttonBars.click .bars-thin:before {
+    content: '\f00d';
 }
 
-label .toggle .bottom-line {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-label input:checked ~ .toggle .top-line {
-    left: 2px;
-    top: 14px;
-    width: 25px;
-    transform: rotate(45deg);
-}
-
-label input:checked ~ .toggle .bottom-line {
-    left: 2px;
-    top: 14px;
-    width: 25px;
-    transform: rotate(-45deg);
-}
-
-label input:checked ~ .toggle .middle-line {
-    opacity: 0;
-    transform: translateX(20px);
-}
-
-label input:checked ~ .side {
-    transform: translateX(0);
+.buttonBars .bars-thin {
+    color: white;
+    font-size: 21px;
 }
 
 .side {
-    height: 680px;
+    height: 730px;
     width: 400px;
-    position: absolute;
+    position: fixed;
     background-color: blue;
     transition: 0.5s ease;
-    position: absolute;
-    top: 80px;
+    padding-top: 60px;
+    overflow-y: scroll;
+    transition: left 0.3s ease;
     transform: translateX(-400px);
-    z-index: 2;
+}
+
+.side.show {
+    left: 400px;
+}
+
+.side::-webkit-scrollbar {
+    display: none;
 }
 
 .side .side-list {
     margin-top: 50px;
+    transition: all 0.3s ease;
 }
 
-.side .side-list li {
+.side .side-list .sideItems {
     list-style-type: none;
 }
 
-.side .side-list li a {
+.side .side-list .sideItems a,
+.apparelItems .apparelMens, .accessories {
+    width: 100%;
     color: white;
     font-family: "from_the_starsbold";
-    display: block;
+    display: inline-block;
     text-transform: capitalize;
     text-decoration: none;
     transition: 0.2s ease-out;
-    padding: 12px 10px;
+    padding: 12px 18px;
     font-size: 18px;
 }
 
-.side .side-list li:hover {
-    background-color: rgba(58, 58, 169, 0.332);
+.apparelItems .apparelMens, .accessories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
-.side .side-list li a .arrow-one {
-    font-size: 15px;
-    color: white;
-    margin-left: 230px;
+.side .side-list .sideItems:hover {
+    background-color: rgba(72, 72, 207, 0.332);
 }
 
-.side .side-list li a .arrow-two {
-    font-size: 15px;
-    color: white;
-    margin-left: 185px;
+.sideItems .submenuAcc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: calc(-100% - 26px);
+    background-color: blue;
+    list-style-type: none;
+    display: none;
 }
 
-.side .side-list li a .arrow-three {
-    font-size: 15px;
+.showSubMenu ~ .submenuAcc { 
+    display: block;
+}
+
+.submenuActive .side-list {
+    transform: translateX(-54%);
+}
+
+.sideItems .submenuAcc .accessoriesTwo {
+    padding: 12px 16px;
     color: white;
-    margin-left: 176px;
+    font-size: 13px;
+    font-family: "barlow-regular";
+    cursor: pointer;
+}
+
+.sideItems .submenuAcc .accessoriesTwo .arrAcc {
+    rotate: 180deg;
+    margin-right: 8px;
+}
+
+.apparelItems .submenuMens {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    right: calc(-100% - 10px);
+    position: absolute;
+    top: 0;
+    position: fixed;
+    display: none;
+    background-color: blue;
+}
+
+.showSubMenuTwo ~ .submenuMens {
+    display: block;
+}
+
+.submenuActiveTwo .side-list-two {
+    transform: translateX(-102%);
+}
+
+.apparelItems .submenuMens .mens {
+    padding: 12px 16px;
+    color: white;
+    font-size: 13px;
+    font-family: "barlow-regular";
+    cursor: pointer;
+}
+
+.apparelItems .submenuMens .mens .arrowMenTwo {
+    rotate: 180deg;
+    margin-right: 8px;
 }
 
 .side .side-log {
-    margin-top: 100px;
-    margin-left: 40px;
+    margin-top: 160px;
+    margin-left: 20px;
 }
 
 .side .side-log a {
@@ -210,7 +238,7 @@ label input:checked ~ .side {
 
 header .header-heading {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 8px;
     padding-left: 170px;
 } 
 
@@ -229,7 +257,7 @@ header .icon-right {
     align-items: center;
     justify-content: flex-end;
     margin-right: 38px;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
 header .icon-right .icon-search {
@@ -382,58 +410,141 @@ header .icon-right .icon-cart:hover {
 header.openSearch .icon-right .icon-cart {
     opacity: 0;
     pointer-events: auto;
-}
+} */
 
-.section-cart {
-    margin-top: 170px;
+.logInAccount {
+    margin-top: 165px;
     text-align: center;
 }
 
-.section-cart .section-cart-head {
-    font-family: "from_the_starsbold";
-    margin-bottom: 40px;
+.logInAccount .logInAccount-head {
+    margin-bottom: 47px;
 }
 
-.section-cart .section-cart-two {
-    margin-bottom: 62px;
+.logInAccount .logInAccount-head h1 {
+    font-family: "from_the_starsbold";
+    font-size: 40px;
 }
 
-.section-cart .section-cart-two a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "from_the_starsbold";
+.logInAccount .InputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.logInAccount .InputField .emailLogIn {
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.logInAccount .InputField .emailLogIn:hover {
+    border-color: gray;
+}
+
+.logInAccount .InputField .emailLogIn::placeholder {
+    color: transparent;
+}
+
+.logInAccount .InputField .emailLabelLogIn {
+    position: absolute;
+    left: 480px;
+    top: 14px;
+    color: rgba(0, 0, 0, 0.692);
+    font-family: "barlow-regular"; 
+}
+
+.logInAccount .InputField .emailLogIn:focus + .emailLabelLogIn, 
+.logInAccount .InputField .emailLogIn:not(:placeholder-shown) + .emailLabelLogIn {
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.logInAccount .InputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.logInAccount .InputField .passLogIn {
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.logInAccount .InputField .passLogIn:hover {
+    border-color: gray;
+}
+
+.logInAccount .InputField .passLogIn::placeholder {
+    color: transparent;
+}
+
+.logInAccount .InputField .passLabelLogIn {
+    position: absolute;
+    left: 480px;
+    top: 14px;
+    color: rgba(0, 0, 0, 0.692);
+    font-family: "barlow-regular"; 
+}
+
+.logInAccount .InputField .passLogIn:focus + .passLabelLogIn, 
+.logInAccount .InputField .passLogIn:not(:placeholder-shown) + .passLabelLogIn {
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.logInAccount .forgot {
+    margin-left: -280px;
+    margin-bottom: 42px;
+}
+
+.logInAccount .forgot a{
+    color: rgba(0, 0, 0, 0.750);
+    font-family: "barlow-regular"; 
     font-size: 15px;
+    transition: 0.2s ease;
+    text-decoration: none;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.750);
+}
+
+.logInAccount .forgot a:hover {
+    border-bottom: 2px solid black;
+}
+
+.logInAccount button {
+    width: 118px;
+    height: 58px;
     background-color: blue;
-    padding: 18px;
     border-radius: 6px;
     color: white;
-}
-
-.section-cart .section-cart-two a:hover {
-    background-color: white;
-    color: blue;
-    border: 1px solid blue;
-}
-
-.section-cart .section-cart-three {
+    text-transform: uppercase;
     font-family: "from_the_starsbold";
+    border: none;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.section-cart .section-cart-four {
-    color: rgba(0, 0, 0, 0.610);
+.logInAccount button:hover {
+    transform: scale(1.05);
 }
 
-.section-cart .section-cart-four a{
-    color: rgba(0, 0, 0, 0.610);
-    font-family: "barlow-regular";
-    transition: 0.2s ease;
+.logInAccount .signUp {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.74);
+    font-family: "barlow-regular"; 
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.74);
 }
 
-.section-cart .section-cart-four a:hover {
-    color: black;
+.logInAccount .signUp:hover {
+    border-bottom: 2px solid black;
 }
 
-footer {
+/* footer {
     width: 1350px;
     height: 602px;
     background-color: rgba(0, 0, 0, 0.866);
@@ -467,7 +578,7 @@ footer .footer-first .footer-links ul {
 }
 
 footer .footer-first .footer-links ul li {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 footer .footer-first .footer-links ul li a {
@@ -504,6 +615,7 @@ footer .footer-first .footer-between .between-email h6 {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 footer .footer-first .footer-between .between-email .between-form-email {
@@ -516,7 +628,7 @@ footer .footer-first .footer-between .between-email .between-form-email input {
     height: 44px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.678);
-    padding: 12px;
+    padding: 10px;
     color: white;
     transition: 0.2s ease;
 }
@@ -543,7 +655,7 @@ footer .footer-first .footer-between .between-email .between-form-email .email-l
 
 footer .footer-first .footer-between .between-form-email input:focus + .email-label,
 footer .footer-first .footer-between .between-form-email input:not(:placeholder-shown) + .email-label {
-    transform: translate(0, -10px);
+    transform: translate(0, -8px);
     font-size: 10px;
 }
 
@@ -560,11 +672,13 @@ footer .footer-first .footer-contact {
 }
 
 footer .footer-first .footer-contact .footer-para{
-    color: rgba(255, 255, 255, 0.795);
+    color: rgba(255, 255, 255, 0.695);
     width: 410px;
     height: 90px;
     font-family: "barlow-regular";
     font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
 }
 
 footer .footer-first .footer-contact a {
@@ -582,4 +696,4 @@ footer .footer-two {
     font-size: 10px;
     text-align: center;
     margin-top: 42px;
-}
+} */
