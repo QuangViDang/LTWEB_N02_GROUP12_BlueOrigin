@@ -3,23 +3,49 @@
 
 <head>
     <title>Group 12 WIN</title>
-
-    <script>
-        // Chờ cho tài liệu HTML tải xong
-        document.addEventListener("DOMContentLoaded", function () {
-            // Chuyển hướng sang trang a.html sau 1 giây
-            setTimeout(function () {
-                window.location.href = "./Home/index.html";
-            }, 3000); // Thay đổi số 1000 nếu bạn muốn thời gian chuyển hướng khác
-        });
-    </script>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* CSS animation */
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        /* Apply the animation to your heading */
+        h1 {
+            animation: slideRight 5s linear;
+        }
+    </style>
 </head>
 
-<body style="height: 900px; display: flex;justify-content: center;align-items: center;background-color: black;">
+<body style="height: 900px; display: flex; justify-content: center; align-items: center; background-color: black;">
     <h1 style="color: white; font-size: 100px; ">
         Welcome to Blue Twelve
     </h1>
+    <script>
+        // Chờ cho tài liệu HTML tải xong
+        document.addEventListener("DOMContentLoaded", function () {
+            // Chuyển hướng sang trang a.html sau 5 giây
+            setTimeout(function () {
+                window.location.href = "./Home/index.html";
+            }, 5000);
+        });
+    </script>
 </body>
 
 </html>
