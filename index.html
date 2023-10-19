@@ -8,6 +8,7 @@
         body {
             height: 900px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: black;
@@ -41,6 +42,17 @@
             width: 100%;
             animation: slideRight 5s linear;
         }
+
+        button {
+            border: none;
+            font-size: 50px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -48,13 +60,18 @@
     <h1>
         Welcome to Blue Twelve
     </h1>
+    <button class="button" id="continueButton" style="display:none;">→</button>
     <script>
+        const continueButton = document.getElementById("continueButton");
+        continueButton.addEventListener("click", () => {
+            window.location.href = "./Home/index.html";
+        });
         // Chờ cho tài liệu HTML tải xong
         document.addEventListener("DOMContentLoaded", function () {
             // Chuyển hướng sang trang a.html sau 5 giây
             setTimeout(function () {
-                window.location.href = "./Home/index.html";
-            }, 6000);
+                continueButton.style.display = "block";
+            }, 5000);
         });
     </script>
 </body>
