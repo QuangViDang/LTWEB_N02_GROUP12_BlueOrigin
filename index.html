@@ -5,6 +5,14 @@
     <title>Group 12 WIN</title>
     <link rel="stylesheet" href="./style.css">
     <style>
+        body {
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
         /* CSS animation */
         @keyframes slideRight {
             0% {
@@ -26,15 +34,18 @@
             }
         }
 
-        /* Apply the animation to your heading */
         h1 {
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            width: 100%;
             animation: slideRight 5s linear;
         }
     </style>
 </head>
 
-<body style="height: 900px; display: flex; justify-content: center; align-items: center; background-color: black;">
-    <h1 style="color: white; font-size: 100px; ">
+<body>
+    <h1>
         Welcome to Blue Twelve
     </h1>
     <script>
@@ -43,7 +54,7 @@
             // Chuyển hướng sang trang a.html sau 5 giây
             setTimeout(function () {
                 window.location.href = "./Home/index.html";
-            }, 5000);
+            }, 6000);
         });
     </script>
 </body>
