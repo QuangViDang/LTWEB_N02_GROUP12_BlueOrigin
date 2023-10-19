@@ -35,12 +35,20 @@
             }
         }
 
-        h1 {
+        .wel {
+            font-size: 100px;
+            animation: slideRight 5s linear;
+        }
+
+        .co,
+        .wel {
             text-align: center;
             color: white;
-            font-size: 100px;
             width: 100%;
-            animation: slideRight 5s linear;
+        }
+
+        .co {
+            font-size: 50px;
         }
 
         button {
@@ -57,21 +65,23 @@
 </head>
 
 <body>
-    <h1>
+    <h1 class="wel">
         Welcome to Blue Twelve
     </h1>
     <button class="button" id="continueButton" style="display:none;">→</button>
+    <h1 class="co" id="co-f" style="display:none;">Ngọc Huyền - Đăng Quang - Khánh Chinh</h1>
     <script>
         const continueButton = document.getElementById("continueButton");
+        const coF = document.getElementById("co-f");
         continueButton.addEventListener("click", () => {
             window.location.href = "./Home/index.html";
         });
-        // Chờ cho tài liệu HTML tải xong
         document.addEventListener("DOMContentLoaded", function () {
             // Chuyển hướng sang trang a.html sau 5 giây
             setTimeout(function () {
                 continueButton.style.display = "block";
-            }, 5000);
+                coF.style.display = "block";
+            }, 6000);
         });
     </script>
 </body>
