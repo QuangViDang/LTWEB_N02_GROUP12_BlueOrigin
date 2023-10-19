@@ -1,0 +1,778 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "from_the_starsbold";
+    src: 
+        url('fonturl-eot') format("embedded-opentype"),
+        url('https://cdn.shopify.com/s/files/1/0301/0088/1545/files/typodermic_-_fromthestarsrg-bold-webfont.woff') format("woff"),
+        url('https://cdn.shopify.com/s/files/1/0301/0088/1545/files/typodermic_-_fromthestarsrg-bold-webfont.woff2') format("woff2"),
+        url('fonturl-ttf') format("truetype"),
+        url('fonturl-svg') format("svg");
+}
+
+@font-face {
+    font-family: "barlow-regular";
+    src: 
+        url('fonturl-eot') format("embedded-opentype"),
+        url('https://cdn.shopify.com/s/files/1/0301/0088/1545/files/barlow-regular-webfont.woff') format("woff"),
+        url('https://cdn.shopify.com/s/files/1/0301/0088/1545/files/barlow-regular-webfont.woff2') format("woff2"),
+        url('fonturl-ttf') format("truetype"),
+        url('fonturl-svg') format("svg");
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    /* font-size: 24px; */
+    letter-spacing: 0.06rem;
+    line-height: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* .header-wrapper{
+    width: 1368px;
+    background-color: blue;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    transition: top 0.3s;
+    z-index: 99;
+}
+.header-wrapper--hidden{
+    transform: translateY(-100px);
+}
+
+header.animate {
+    top: -90px;
+}
+
+header.sticky {
+    top: 0px;
+}
+
+header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.openSearch label {
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.buttonBars {
+    position: absolute;
+    top: 35px;
+    left: 55px;
+    cursor: pointer;
+    z-index: 88;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.buttonBars.click {
+    left: 55px;
+}
+
+.buttonBars.click .bars-thin:before {
+    content: '\f00d';
+}
+
+.buttonBars .bars-thin {
+    color: white;
+    font-size: 21px;
+}
+
+.side {
+    height: 730px;
+    width: 400px;
+    position: fixed;
+    background-color: blue;
+    transition: 0.5s ease;
+    padding-top: 60px;
+    overflow-y: scroll;
+    transition: left 0.3s ease;
+    transform: translateX(-400px);
+}
+
+.side.show {
+    left: 400px;
+}
+
+.side::-webkit-scrollbar {
+    display: none;
+}
+
+.side .side-list {
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+
+.side .side-list .sideItems {
+    list-style-type: none;
+}
+
+.side .side-list .sideItems a,
+.apparelItems .apparelMens, .accessories {
+    width: 100%;
+    color: white;
+    font-family: "from_the_starsbold";
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    padding: 12px 18px;
+    font-size: 18px;
+}
+
+.apparelItems .apparelMens, .accessories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.side .side-list .sideItems:hover {
+    background-color: rgba(72, 72, 207, 0.332);
+}
+
+.sideItems .submenuAcc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: calc(-100% - 26px);
+    background-color: blue;
+    list-style-type: none;
+    display: none;
+}
+
+.showSubMenu ~ .submenuAcc { 
+    display: block;
+}
+
+.submenuActive .side-list {
+    transform: translateX(-54%);
+}
+
+.sideItems .submenuAcc .accessoriesTwo {
+    padding: 12px 16px;
+    color: white;
+    font-size: 13px;
+    font-family: "barlow-regular";
+    cursor: pointer;
+}
+
+.sideItems .submenuAcc .accessoriesTwo .arrAcc {
+    rotate: 180deg;
+    margin-right: 8px;
+}
+
+.apparelItems .submenuMens {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    right: calc(-100% - 10px);
+    position: absolute;
+    top: 0;
+    position: fixed;
+    display: none;
+    background-color: blue;
+}
+
+.showSubMenuTwo ~ .submenuMens {
+    display: block;
+}
+
+.submenuActiveTwo .side-list-two {
+    transform: translateX(-102%);
+}
+
+.apparelItems .submenuMens .mens {
+    padding: 12px 16px;
+    color: white;
+    font-size: 13px;
+    font-family: "barlow-regular";
+    cursor: pointer;
+}
+
+.apparelItems .submenuMens .mens .arrowMenTwo {
+    rotate: 180deg;
+    margin-right: 8px;
+}
+
+.side .side-log {
+    margin-top: 160px;
+    margin-left: 20px;
+}
+
+.side .side-log a {
+    text-decoration: none;
+    color: white;
+    font-family: "barlow-regular";
+    font-size: 15px;
+}
+
+.side .side-log a .log-user {
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+.side .side-log a .log-user:hover {
+    transform: scale(1.1);
+}
+
+header .header-heading {
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 170px;
+} 
+
+header .header-heading img {
+    width: 220px;
+    height: auto;
+}
+
+header.openSearch .header-heading{
+    opacity: 0;
+    pointer-events: auto;
+}
+
+header .icon-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 38px;
+    padding-top: 8px;
+}
+
+header .icon-right .icon-search {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 18px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+header .icon-right .icon-search:hover {
+    transform: scale(1.05);
+}
+
+header.openSearch .icon-right .icon-search {
+    position: absolute;
+    right: 380px;
+    top: 35px;
+    font-size: 25px;
+}
+
+header .icon-right .search-box {
+    width: 100%;
+    height: 46px;
+    max-width: 466px;
+    position: absolute;
+    top: 25px;
+    right: 450px;
+    background-color: blue;
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s linear;
+}
+
+header.openSearch .icon-right .search-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header .icon-right .search-box input {
+    width: 100%;
+    height: 46px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.627);
+    background-color: transparent;
+    color: white;
+    transition: 0.2s ease;
+}
+
+header .icon-right .search-box input:focus {
+    border-color: white;
+    background-color: transparent;
+}
+
+header .icon-right .search-box input:hover {
+    border-color: white;
+}
+
+header .icon-right .search-box input::placeholder {
+    color: transparent;
+}
+
+header .icon-right .search-box .search-box-word {
+    color: rgba(255, 255, 255, 0.767);
+    font-family: "barlow-regular";
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    font-size: 19px;
+    pointer-events: none; 
+    transition: 0.2s ease; 
+}
+
+header .icon-right .search-box input:focus + .search-box-word, 
+header .icon-right .search-box input:not(:placeholder-shown) + .search-box-word {
+    transform: translate(0, -9px);
+    font-size: 12px;
+}
+
+header .icon-right .search-box .search-thin {
+    color: rgba(255, 255, 255, 0.780);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.searchList {
+    text-align: center;
+    padding: 5px;
+    width: 468px;
+    height: 650px;
+    background-color: blue;
+    overflow-y: scroll;
+}
+
+.searchList::-webkit-scrollbar {
+    display: none;
+}
+
+.searchList .searchListItem {
+    list-style-type: none;
+    width: 420px;
+    height: 80px;
+    display: flex;
+}
+
+.searchList .searchListItem img {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.searchList .searchListItem a {
+    text-decoration: none;
+    font-family: "barlow-regular"; 
+    color: white;
+    margin-left: 30px;
+    margin-top: 18px;
+}
+
+header .icon-right .icon-user {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 18px;
+    margin-right: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+header .icon-right .icon-user:hover {
+    transform: scale(1.05);
+}
+
+header.openSearch .icon-right .icon-user {
+    opacity: 0;
+    pointer-events: auto;
+}
+
+header .icon-right .icon-cart {
+    color: rgba(255, 255, 255, 0.921);
+    height: 45px;
+    transition: 0.2s ease-in-out;
+}
+
+header .icon-right .icon-cart:hover {
+    transform: scale(1.05);
+}
+
+header.openSearch .icon-right .icon-cart {
+    opacity: 0;
+    pointer-events: auto;
+} */
+
+.registerAccount {
+    margin-top: 160px;
+    text-align: center;
+}
+
+.registerAccount .register-head h1 {
+    font-size: 40px;
+    font-family: "from_the_starsbold";
+    margin-bottom: 45px;
+}
+
+.registerAccount .errorSignUp {
+    font-family: "from_the_starsbold";
+    font-size: 20px;
+    margin-left: -120px;
+    margin-bottom: 30px;
+}
+
+.registerAccount .errorSignUp .please {
+    margin-left: -90px;
+}
+
+.registerAccount .errorSignUp .please-two {
+    margin-left: -60px;
+    margin-top: 30px;
+}
+
+.registerAccount .errorSignUp .please i {
+    font-size: 5px;
+}
+
+.registerAccount .errorSignUp .please a {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.699);
+}
+
+.registerAccount .errorSignUp .please a:hover {
+    border-bottom: 2px solid black;
+}
+
+.registerAccount .registerFirst {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .registerFirst .firstName{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.registerAccount .registerFirst .firstName::placeholder {
+    color: transparent;
+}
+
+.registerAccount .registerFirst .firstLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .registerFirst .firstName:focus + .firstLabel,
+.registerAccount .registerFirst .firstName:not(:placeholder-shown) + .firstLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .registerFirst .firstName:hover {
+    border-color: gray;
+}
+
+.registerAccount .registerLast {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .registerLast .lastName{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .registerLast .lastName::placeholder {
+    color: transparent;
+}
+
+.registerAccount .registerLast .lastLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .registerLast .lastName:focus + .lastLabel,
+.registerAccount .registerLast .lastName:not(:placeholder-shown) + .lastLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .registerLast .lastName:hover {
+    border-color: gray;
+}
+
+.registerAccount .inputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .inputField .emailCreate{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .inputField .emailCreate::placeholder {
+    color: transparent;
+}
+
+.registerAccount .inputField .emailLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .inputField .emailCreate:focus + .emailLabel,
+.registerAccount .inputField .emailCreate:not(:placeholder-shown) + .emailLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .inputField .emailCreate:hover {
+    border-color: gray;
+}
+
+.registerAccount .inputField {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.registerAccount .inputField .passCreate{
+    width: 446px;
+    height: 48px;
+    padding: 10px 14px;
+    transition: 0.3s ease;
+}
+
+.registerAccount .inputField .passCreate::placeholder {
+    color: transparent;
+}
+
+.registerAccount .inputField .passLabel {
+    position: absolute;
+    left: calc(100% - 900px);
+    top: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: "barlow-regular"; 
+    padding: 0 12px;
+}
+
+.registerAccount .inputField .passCreate:focus + .passLabel,
+.registerAccount .inputField .passCreate:not(:placeholder-shown) + .passLabel{
+    transform: translate(0, -10px);
+    font-size: 10px;
+}
+
+.registerAccount .inputField .passCreate:hover {
+    border-color: gray;
+}
+
+.registerAccount button {
+    margin-top: 30px;
+    width: 117px;
+    height: 57px;
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+    font-family: "from_the_starsbold";
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 105px;
+}
+
+.registerAccount button:hover {
+    transform: scale(1.05);
+}
+
+/* footer {
+    width: 1350px;
+    height: 602px;
+    background-color: rgba(0, 0, 0, 0.866);
+    margin-top: 75px;
+}
+
+footer .footer-first {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.12);
+}
+
+footer .footer-first .footer-links {
+    width: 386px;
+    height: auto;
+    margin-top: 82px;
+}
+
+footer .footer-first .footer-links h5 {
+    font-family: "from_the_starsbold";
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-bottom: 26px;
+}
+
+footer .footer-first .footer-links ul {
+    list-style-type: none;
+}
+
+footer .footer-first .footer-links ul li {
+    margin-left: 50px;
+}
+
+footer .footer-first .footer-links ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.675);
+    font-size: 14px;
+    font-family: "barlow-regular";
+    line-height: 35px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footer-first .footer-links ul li a:hover {
+    text-shadow: 0 0 1px white;
+    text-decoration: underline;
+}
+
+footer .footer-first .footer-between {
+    margin-top: 55px;
+    text-align: center;
+}
+
+footer .footer-first .footer-between img {
+    width: 170px;
+    height: 122px;
+}
+
+footer .footer-first .footer-between .between-email {
+    margin-top: 202px;
+}
+
+footer .footer-first .footer-between .between-email h6 {
+    font-family: "from_the_starsbold";
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .footer-first .footer-between .between-email .between-form-email {
+    position: relative;
+    margin-left: 20px;
+}
+
+footer .footer-first .footer-between .between-email .between-form-email input {
+    width: 360px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.678);
+    padding: 10px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+footer .footer-first .footer-between .between-email .between-form-email input::placeholder {
+    color: transparent;
+}
+
+footer .footer-first .footer-between .between-email .between-form-email input:focus {
+    border-color: white;
+}
+
+footer .footer-first .footer-between .between-email .between-form-email .email-label {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.592);
+    font-family: "barlow-regular";
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+footer .footer-first .footer-between .between-form-email input:focus + .email-label,
+footer .footer-first .footer-between .between-form-email input:not(:placeholder-shown) + .email-label {
+    transform: translate(0, -8px);
+    font-size: 10px;
+}
+
+footer .footer-first .footer-between .between-email .arrows-footer {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: white;
+}
+
+footer .footer-first .footer-contact {
+    margin-top: 75px;
+    margin-right: 40px;
+}
+
+footer .footer-first .footer-contact .footer-para{
+    color: rgba(255, 255, 255, 0.695);
+    width: 410px;
+    height: 90px;
+    font-family: "barlow-regular";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+footer .footer-first .footer-contact a {
+    color: rgba(255, 255, 255, 0.795);
+    transition: 0.2s ease-in-out;
+}
+
+footer .footer-first .footer-contact a:hover {
+    text-shadow: 0 0 1px white;
+}
+
+footer .footer-two {
+    color: white;
+    font-family: "barlow-regular";
+    font-size: 10px;
+    text-align: center;
+    margin-top: 42px;
+} */
+
+
